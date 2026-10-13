@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management Software — EzyHR</title>
+  <meta name="description" content="Centralize employee records, dynamic organizational charts, custom profiles, digital document vaults, and lifecycle workflows with EzyHR.">
+  <meta property="og:title" content="Employee Management Software — EzyHR">
+  <meta property="og:description" content="A single source of truth for your entire workforce directory and employee lifecycle.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%235146E5'/><path d='M16 5L7 10V22L16 27L25 22V10Z' stroke='white' stroke-width='2' fill='none'/><circle cx='16' cy='16' r='4' fill='white'/></svg>">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<!-- Hero Section (Lavender Tint) -->
+<section class="page-hero section" style="background:linear-gradient(135deg,#EDE9FE 0%,#F3E8FF 50%,#E4F1FF 100%)">
+  <div class="container">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html">Home</a><span>/</span><a href="features.html">Product</a><span>/</span><span>Employee Management</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center">
+      <div>
+        <div class="section-label" style="background:rgba(81,70,229,0.12);color:var(--brand-primary);margin-bottom:16px">Core HR & Directory</div>
+        <h1 class="section-title" style="font-size:clamp(2.5rem,4.5vw,3.5rem);margin-bottom:20px">
+          The single source of truth for <span>your workforce</span>
+        </h1>
+        <p style="font-size:1.125rem;color:var(--text-secondary);line-height:1.75;margin-bottom:32px">
+          Eliminate siloed spreadsheets. Maintain accurate employee records, track role changes, visualize company hierarchy, and safeguard critical employment documents in one secure repository.
+        </p>
+        <div class="flex gap-sm" style="flex-wrap:wrap">
+          <a href="app-demo.html" class="btn btn-primary btn-lg">View Directory Demo</a>
+          <a href="book-demo.html" class="btn btn-secondary btn-lg">Request Walkthrough</a>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Mock Employee Directory Card -->
+      <div class="animate-fadeup" style="position:relative">
+        <div style="background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-card)">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--border-soft)">
+            <div style="display:flex;align-items:center;gap:10px">
+              <span style="font-size:1.25rem">👥</span>
+              <div>
+                <div style="font-weight:700;font-size:0.9375rem">Workforce Directory</div>
+                <div style="font-size:0.75rem;color:var(--text-muted)">148 Active Team Members</div>
+              </div>
+            </div>
+            <span class="badge badge-success" style="font-size:0.75rem">Live Sync</span>
+          </div>
+
+          <!-- Mini Employee List Items -->
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--bg-lavender);border-radius:var(--radius-sm)">
+              <div style="display:flex;align-items:center;gap:12px">
+                <div style="width:36px;height:36px;border-radius:50%;background:var(--brand-primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.8125rem">AK</div>
+                <div>
+                  <div style="font-weight:700;font-size:0.875rem">Alex Kumar</div>
+                  <div style="font-size:0.75rem;color:var(--text-secondary)">Lead Architect · Engineering</div>
+                </div>
+              </div>
+              <span class="badge" style="background:#EDE9FE;color:#5146E5;font-size:0.7rem">Full-time</span>
+            </div>
+
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--surface-soft);border-radius:var(--radius-sm)">
+              <div style="display:flex;align-items:center;gap:12px">
+                <div style="width:36px;height:36px;border-radius:50%;background:#0D9488;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.8125rem">PS</div>
+                <div>
+                  <div style="font-weight:700;font-size:0.875rem">Priya Sharma</div>
+                  <div style="font-size:0.75rem;color:var(--text-secondary)">Senior Product Designer · Design</div>
+                </div>
+              </div>
+              <span class="badge badge-success" style="font-size:0.7rem">Remote</span>
+            </div>
+
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--surface-soft);border-radius:var(--radius-sm)">
+              <div style="display:flex;align-items:center;gap:12px">
+                <div style="width:36px;height:36px;border-radius:50%;background:#D97706;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.8125rem">RN</div>
+                <div>
+                  <div style="font-weight:700;font-size:0.875rem">Rahul Nair</div>
+                  <div style="font-size:0.75rem;color:var(--text-secondary)">Growth Specialist · Marketing</div>
+                </div>
+              </div>
+              <span class="badge" style="background:#FEF3C7;color:#B45309;font-size:0.7rem">On Probation</span>
+            </div>
+          </div>
+
+          <div style="margin-top:16px;padding-top:12px;border-top:1px solid var(--border-soft);display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-muted)">
+            <span>Department Filters: 6 Active</span>
+            <span style="color:var(--brand-primary);font-weight:600">Searchable Directory →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Breakdown (Lavender Tinted Cards) -->
+<section class="section" style="background:var(--surface)">
+  <div class="container">
+    <div class="text-center" style="max-width:680px;margin:0 auto 56px">
+      <div class="section-label" style="margin-bottom:12px">Core Capabilities</div>
+      <h2 class="section-title">Built for precision and <span>effortless scaling</span></h2>
+      <p style="color:var(--text-secondary);line-height:1.7">Everything HR managers need to oversee personnel from onboarding to promotion and beyond.</p>
+    </div>
+
+    <div class="grid grid-3" style="gap:28px">
+      <div class="card reveal" style="border-top:4px solid var(--brand-primary)">
+        <div style="width:44px;height:44px;border-radius:12px;background:#EDE9FE;color:#5146E5;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">📇</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Comprehensive Digital Profiles</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Store compensation structures, emergency contacts, statutory identity numbers, equipment allocations, and job history in one unified view.</p>
+      </div>
+
+      <div class="card reveal" style="border-top:4px solid var(--brand-secondary)">
+        <div style="width:44px;height:44px;border-radius:12px;background:#EDE9FE;color:#7667F5;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">🌳</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Interactive Organizational Charts</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Automatically generate company hierarchies that update as employees are hired, promoted, or transferred across teams.</p>
+      </div>
+
+      <div class="card reveal" style="border-top:4px solid var(--brand-accent)">
+        <div style="width:44px;height:44px;border-radius:12px;background:#E2F7F1;color:#198B70;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">🔒</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Granular Role-Based Permissions</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Ensure managers only see their direct reports while sensitive salary fields and medical records remain strictly confidential.</p>
+      </div>
+
+      <div class="card reveal" style="border-top:4px solid #F59E0B">
+        <div style="width:44px;height:44px;border-radius:12px;background:#FEF3C7;color:#D97706;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">📁</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Secure Document Vault</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Store employment contracts, NDAs, educational credentials, and certifications with automated expiration warning alerts.</p>
+      </div>
+
+      <div class="card reveal" style="border-top:4px solid #EC4899">
+        <div style="width:44px;height:44px;border-radius:12px;background:#FCE7F3;color:#DB2777;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">🔄</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Lifecycle Milestone Tracking</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Track probation completions, promotion reviews, salary increments, work anniversaries, and exit interview clearances.</p>
+      </div>
+
+      <div class="card reveal" style="border-top:4px solid #3B82F6">
+        <div style="width:44px;height:44px;border-radius:12px;background:#DBEAFE;color:#2563EB;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">⚡</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Custom Data Fields & Tags</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Add custom company attributes like t-shirt sizes, office seating zones, secondary skills, and emergency contact details without coding.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Workflow Visualization Section -->
+<section class="section" style="background:var(--bg-lavender)">
+  <div class="container">
+    <div class="text-center" style="max-width:680px;margin:0 auto 48px">
+      <div class="section-label" style="margin-bottom:12px">Lifecycle Workflow</div>
+      <h2 class="section-title">From day one to <span>alumni status</span></h2>
+      <p style="color:var(--text-secondary)">A seamless timeline supporting every phase of an employee's journey.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:20px;position:relative">
+      <div style="background:var(--surface);border-radius:var(--radius-md);padding:24px;border:1px solid var(--border-soft);text-align:center">
+        <div style="width:36px;height:36px;border-radius:50%;background:#EDE9FE;color:#5146E5;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:800">1</div>
+        <h4 style="font-size:1rem;font-weight:700;margin-bottom:6px">Offer Acceptance</h4>
+        <p style="color:var(--text-secondary);font-size:0.8125rem">Candidate profile auto-migrates from ATS to Employee Directory.</p>
+      </div>
+
+      <div style="background:var(--surface);border-radius:var(--radius-md);padding:24px;border:1px solid var(--border-soft);text-align:center">
+        <div style="width:36px;height:36px;border-radius:50%;background:#EDE9FE;color:#5146E5;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:800">2</div>
+        <h4 style="font-size:1rem;font-weight:700;margin-bottom:6px">Digital Onboarding</h4>
+        <p style="color:var(--text-secondary);font-size:0.8125rem">New hire uploads identity proofs and signs confidentiality agreements.</p>
+      </div>
+
+      <div style="background:var(--surface);border-radius:var(--radius-md);padding:24px;border:1px solid var(--border-soft);text-align:center">
+        <div style="width:36px;height:36px;border-radius:50%;background:#EDE9FE;color:#5146E5;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:800">3</div>
+        <h4 style="font-size:1rem;font-weight:700;margin-bottom:6px">Active Employment</h4>
+        <p style="color:var(--text-secondary);font-size:0.8125rem">Automated attendance logging, payslips, appraisals, and leaves.</p>
+      </div>
+
+      <div style="background:var(--surface);border-radius:var(--radius-md);padding:24px;border:1px solid var(--border-soft);text-align:center">
+        <div style="width:36px;height:36px;border-radius:50%;background:#EDE9FE;color:#5146E5;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:800">4</div>
+        <h4 style="font-size:1rem;font-weight:700;margin-bottom:6px">Promotion & Milestones</h4>
+        <p style="color:var(--text-secondary);font-size:0.8125rem">Grade upgrades, compensation revisions, and org hierarchy shifts.</p>
+      </div>
+
+      <div style="background:var(--surface);border-radius:var(--radius-md);padding:24px;border:1px solid var(--border-soft);text-align:center">
+        <div style="width:36px;height:36px;border-radius:50%;background:#EDE9FE;color:#5146E5;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:800">5</div>
+        <h4 style="font-size:1rem;font-weight:700;margin-bottom:6px">Graceful Offboarding</h4>
+        <p style="color:var(--text-secondary);font-size:0.8125rem">IT asset return checklist, full & final settlement calculation, and archiving.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQs -->
+<section class="section" style="background:var(--surface)">
+  <div class="container" style="max-width:800px">
+    <div class="text-center" style="margin-bottom:44px">
+      <div class="section-label" style="margin-bottom:12px">FAQs</div>
+      <h2 class="section-title">Common questions about <span>Employee Management</span></h2>
+    </div>
+
+    <div class="accordion-wrap">
+      <div class="accordion-item open">
+        <button class="accordion-header">
+          <span>Can we bulk import our existing employee records?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Yes. EzyHR includes a bulk CSV/Excel import tool with automated field matching, validating data for duplicate employee IDs or invalid email addresses before publishing.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>How are past employee records handled upon resignation?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Relieved employees are archived safely into an alumni record. Their historical payslips and tax records remain fully accessible for statutory audit purposes without counting against active employee billing licenses.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Can managers view salary figures of their direct reports?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Only if you choose to enable that permission! EzyHR features role-based access control where compensation details can be restricted exclusively to HR Admins and Founders.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Related Products -->
+<section class="section" style="background:var(--bg-main)">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px">
+      <div>
+        <div class="section-label" style="margin-bottom:8px">Connected Workflows</div>
+        <h3 style="font-size:1.5rem;font-family:var(--font-heading)">Explore related modules</h3>
+      </div>
+      <a href="features.html" class="btn btn-ghost" style="color:var(--brand-primary);font-weight:700">View All Features →</a>
+    </div>
+
+    <div class="grid grid-3" style="gap:24px">
+      <div class="card">
+        <h4 style="font-size:1.125rem;font-weight:700;margin-bottom:8px">Automated Payroll</h4>
+        <p style="color:var(--text-secondary);font-size:0.875rem;line-height:1.6;margin-bottom:16px">Salaries calculated directly from employee master data and grade bands.</p>
+        <a href="payroll.html" style="color:#2563EB;font-weight:700;font-size:0.875rem">Learn More →</a>
+      </div>
+      <div class="card">
+        <h4 style="font-size:1.125rem;font-weight:700;margin-bottom:8px">Digital Onboarding</h4>
+        <p style="color:var(--text-secondary);font-size:0.875rem;line-height:1.6;margin-bottom:16px">Convert new hires into verified employee records with custom checklists.</p>
+        <a href="onboarding.html" style="color:#E65100;font-weight:700;font-size:0.875rem">Learn More →</a>
+      </div>
+      <div class="card">
+        <h4 style="font-size:1.125rem;font-weight:700;margin-bottom:8px">Employee Self-Service</h4>
+        <p style="color:var(--text-secondary);font-size:0.875rem;line-height:1.6;margin-bottom:16px">Give your employees direct access to edit their profile details and documents.</p>
+        <a href="employee-self-service.html" style="color:#9333EA;font-weight:700;font-size:0.875rem">Learn More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Demo CTA -->
+<section class="section" style="background:linear-gradient(135deg,var(--brand-primary) 0%,#312E81 100%);color:#fff">
+  <div class="container text-center" style="max-width:680px">
+    <h2 style="font-size:clamp(2rem,4vw,2.5rem);font-weight:900;margin-bottom:16px;font-family:var(--font-heading)">
+      Experience the EzyHR Directory in real time
+    </h2>
+    <p style="font-size:1.0625rem;opacity:0.9;line-height:1.7;margin-bottom:28px">
+      Filter departments, inspect employee cards, and test add-employee modals in our interactive sandbox.
+    </p>
+    <div class="flex gap-sm justify-center">
+      <a href="app-demo.html" class="btn btn-secondary btn-lg">Open Directory Demo</a>
+      <a href="book-demo.html" class="btn btn-accent btn-lg" style="background:#fff;color:var(--brand-primary)">Book a Demo</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="assets/js/components.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    initAccordions('.accordion-item');
+  });
+</script>
+</body>
+</html>

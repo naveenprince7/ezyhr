@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automated Payroll Software — EzyHR</title>
+  <meta name="description" content="Calculate salaries in 1-click, automate tax deductions, generate digital payslips, and process bank payouts with EzyHR's modern payroll engine.">
+  <meta property="og:title" content="Automated Payroll Software — EzyHR">
+  <meta property="og:description" content="Effortless, error-free payroll operations for growing teams.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%235146E5'/><path d='M16 5L7 10V22L16 27L25 22V10Z' stroke='white' stroke-width='2' fill='none'/><circle cx='16' cy='16' r='4' fill='white'/></svg>">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<!-- Hero Section (Pale Blue Tint) -->
+<section class="page-hero section" style="background:linear-gradient(135deg,#E4F1FF 0%,#EDEAFF 60%,#E2F7F1 100%)">
+  <div class="container">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html">Home</a><span>/</span><a href="features.html">Product</a><span>/</span><span>Payroll</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center">
+      <div>
+        <div class="section-label" style="background:rgba(37,99,235,0.12);color:#2563EB;margin-bottom:16px">Payroll & Compensation</div>
+        <h1 class="section-title" style="font-size:clamp(2.5rem,4.5vw,3.5rem);margin-bottom:20px">
+          Run complete company payroll in <span>minutes, not days</span>
+        </h1>
+        <p style="font-size:1.125rem;color:var(--text-secondary);line-height:1.75;margin-bottom:32px">
+          Automate complex gross-to-net salary math, statutory provident fund deductions, income tax withholdings, and instant employee payslips without spreadsheet errors.
+        </p>
+        <div class="flex gap-sm" style="flex-wrap:wrap">
+          <a href="app-demo.html" class="btn btn-primary btn-lg">Test Payroll Run in Demo</a>
+          <a href="book-demo.html" class="btn btn-secondary btn-lg">Get Pricing & Quote</a>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Interactive Payslip Card Preview -->
+      <div class="animate-fadeup">
+        <div style="background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--radius-lg);padding:28px;box-shadow:var(--shadow-card)">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--border-soft)">
+            <div>
+              <div style="font-weight:800;font-size:1.125rem;color:var(--text-primary);font-family:var(--font-heading)">EzyHR Payslip Preview</div>
+              <div style="font-size:0.75rem;color:var(--text-muted)">Cycle: October 2024 · Processed</div>
+            </div>
+            <span class="badge badge-success">Salary Disbursed</span>
+          </div>
+
+          <div style="display:flex;justify-content:space-between;margin-bottom:16px;font-size:0.875rem">
+            <div>
+              <div style="color:var(--text-muted);font-size:0.75rem">Employee</div>
+              <div style="font-weight:700">Priya Sharma (EMP-1002)</div>
+            </div>
+            <div style="text-align:right">
+              <div style="color:var(--text-muted);font-size:0.75rem">Department</div>
+              <div style="font-weight:700">Product Design</div>
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;background:var(--bg-blue);border-radius:var(--radius-sm);padding:16px;margin-bottom:16px">
+            <div>
+              <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:4px">Gross Earnings</div>
+              <div style="font-size:1.25rem;font-weight:800;color:var(--text-primary)">₹1,25,000</div>
+              <div style="font-size:0.7rem;color:var(--text-secondary);margin-top:2px">Basic + HRA + Special Allw.</div>
+            </div>
+            <div>
+              <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:4px">Statutory Deductions</div>
+              <div style="font-size:1.25rem;font-weight:800;color:var(--danger)">-₹14,200</div>
+              <div style="font-size:0.7rem;color:var(--text-secondary);margin-top:2px">PF (12%) + PT + TDS</div>
+            </div>
+          </div>
+
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:var(--surface-soft);border:1px dashed var(--border-soft);border-radius:var(--radius-sm)">
+            <div>
+              <div style="font-size:0.75rem;font-weight:600;color:var(--text-muted)">NET PAYABLE AMOUNT</div>
+              <div style="font-size:1.375rem;font-weight:900;color:var(--success)">₹1,10,800</div>
+            </div>
+            <button class="btn btn-sm btn-ghost" style="border:1px solid var(--border-soft);font-size:0.75rem">
+              📄 Download PDF
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Core Features Grid -->
+<section class="section" style="background:var(--surface)">
+  <div class="container">
+    <div class="text-center" style="max-width:680px;margin:0 auto 56px">
+      <div class="section-label" style="margin-bottom:12px">Engine Features</div>
+      <h2 class="section-title">End-to-end payroll <span>built for accuracy</span></h2>
+      <p style="color:var(--text-secondary);line-height:1.7">From salary component structuring to one-click bank payouts and tax filings.</p>
+    </div>
+
+    <div class="grid grid-3" style="gap:28px">
+      <div class="card reveal">
+        <div style="width:44px;height:44px;border-radius:12px;background:#E4F1FF;color:#2563EB;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">⚙️</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Custom Salary Structures</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Configure flexible CTC packages: Basic, House Rent Allowance (HRA), Special Allowance, medical benefits, performance bonuses, and custom reimbursements.</p>
+      </div>
+
+      <div class="card reveal">
+        <div style="width:44px;height:44px;border-radius:12px;background:#E2F7F1;color:#198B70;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">⚖️</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Statutory Tax Deductions</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Automated deduction math for Employee Provident Fund (PF), ESI, Professional Tax (PT), and progressive income tax brackets based on selected tax regimes.</p>
+      </div>
+
+      <div class="card reveal">
+        <div style="width:44px;height:44px;border-radius:12px;background:#EDE9FE;color:#5146E5;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">⏱️</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Attendance & Leave Sync</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Zero manual data re-entry. Unpaid leaves (loss of pay), approved overtimes, and join-date pro-rations feed directly into the monthly payroll calculation.</p>
+      </div>
+
+      <div class="card reveal">
+        <div style="width:44px;height:44px;border-radius:12px;background:#FEF3C7;color:#D97706;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">🏦</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Direct Bank Payout Files</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Generate standard bank upload sheets (Excel/CSV/TXT format) compatible with leading corporate banking portals for instant salary disbursements.</p>
+      </div>
+
+      <div class="card reveal">
+        <div style="width:44px;height:44px;border-radius:12px;background:#FCE7F3;color:#DB2777;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">✉️</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Digital Password-Protected Payslips</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Distribute encrypted payslips directly to employee self-service portals and emails the moment a payroll run is finalized.</p>
+      </div>
+
+      <div class="card reveal">
+        <div style="width:44px;height:44px;border-radius:12px;background:#DBEAFE;color:#0284C7;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">📊</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Variance & Audit Reports</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Compare month-over-month payroll expenses. Flag sudden variance anomalies, new hires, bonuses, and salary revisions before hitting approve.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Step-by-Step Payroll Processing Workflow -->
+<section class="section" style="background:var(--bg-blue)">
+  <div class="container">
+    <div class="text-center" style="max-width:680px;margin:0 auto 48px">
+      <div class="section-label" style="margin-bottom:12px">Execution Flow</div>
+      <h2 class="section-title">The 4-step monthly <span>payroll workflow</span></h2>
+      <p style="color:var(--text-secondary)">Experience how simple payday can be.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:24px">
+      <div style="background:var(--surface);border-radius:var(--radius-md);padding:28px;border:1px solid var(--border-soft)">
+        <div style="font-size:1.5rem;font-weight:800;color:#2563EB;margin-bottom:12px">01</div>
+        <h4 style="font-size:1.125rem;font-weight:700;margin-bottom:8px">Lock Attendance</h4>
+        <p style="color:var(--text-secondary);font-size:0.875rem;line-height:1.6">Review monthly biometric logs, approve outstanding leaves, and freeze attendance records.</p>
+      </div>
+
+      <div style="background:var(--surface);border-radius:var(--radius-md);padding:28px;border:1px solid var(--border-soft)">
+        <div style="font-size:1.5rem;font-weight:800;color:#2563EB;margin-bottom:12px">02</div>
+        <h4 style="font-size:1.125rem;font-weight:700;margin-bottom:8px">Calculate & Review</h4>
+        <p style="color:var(--text-secondary);font-size:0.875rem;line-height:1.6">EzyHR compiles earnings, deductions, and variable bonuses. Review the automated variance report.</p>
+      </div>
+
+      <div style="background:var(--surface);border-radius:var(--radius-md);padding:28px;border:1px solid var(--border-soft)">
+        <div style="font-size:1.5rem;font-weight:800;color:#2563EB;margin-bottom:12px">03</div>
+        <h4 style="font-size:1.125rem;font-weight:700;margin-bottom:8px">Disburse Salaries</h4>
+        <p style="color:var(--text-secondary);font-size:0.875rem;line-height:1.6">Download pre-formatted bank disbursement files or initiate direct payout through integrated payment gateway.</p>
+      </div>
+
+      <div style="background:var(--surface);border-radius:var(--radius-md);padding:28px;border:1px solid var(--border-soft)">
+        <div style="font-size:1.5rem;font-weight:800;color:#2563EB;margin-bottom:12px">04</div>
+        <h4 style="font-size:1.125rem;font-weight:700;margin-bottom:8px">Publish Payslips</h4>
+        <p style="color:var(--text-secondary);font-size:0.875rem;line-height:1.6">Deliver encrypted digital payslips immediately to employee self-service apps and mailboxes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQs -->
+<section class="section" style="background:var(--surface)">
+  <div class="container" style="max-width:800px">
+    <div class="text-center" style="margin-bottom:44px">
+      <div class="section-label" style="margin-bottom:12px">FAQs</div>
+      <h2 class="section-title">Common questions about <span>Payroll Processing</span></h2>
+    </div>
+
+    <div class="accordion-wrap">
+      <div class="accordion-item open">
+        <button class="accordion-header">
+          <span>Does EzyHR support mid-month salary joining and pro-rata deductions?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Yes. If an employee joins on October 18th, EzyHR automatically calculates the exact number of eligible working days and pro-rates basic, allowances, and statutory contributions accordingly.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Can we configure custom bonuses, commissions, and expense reimbursements?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Absolutely. You can inject ad-hoc one-time bonuses or non-taxable expense reimbursements directly into a specific month's payroll cycle.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Are payroll calculations verified against local compliance standards?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>EzyHR incorporates rule-engine models for standard statutory PF, ESI, and tax withholding brackets. Note that as a frontend demonstration, live financial transfers are illustrative.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="section" style="background:linear-gradient(135deg,#1D4ED8 0%,#1E1B4B 100%);color:#fff">
+  <div class="container text-center" style="max-width:680px">
+    <h2 style="font-size:clamp(2rem,4vw,2.5rem);font-weight:900;margin-bottom:16px;font-family:var(--font-heading)">
+      Try our interactive payroll sandbox
+    </h2>
+    <p style="font-size:1.0625rem;opacity:0.9;line-height:1.7;margin-bottom:28px">
+      See how employee attendance, leave status, and tax deductions come together in the live app demo.
+    </p>
+    <div class="flex gap-sm justify-center">
+      <a href="app-demo.html" class="btn btn-secondary btn-lg">Launch Payroll Demo</a>
+      <a href="payroll-guide.html" class="btn btn-accent btn-lg" style="background:#fff;color:#1D4ED8">Read Payroll Guide</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="assets/js/components.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    initAccordions('.accordion-item');
+  });
+</script>
+</body>
+</html>

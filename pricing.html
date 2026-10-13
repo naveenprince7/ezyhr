@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EzyHR Pricing — Flexible Plans for Every Team</title>
+  <meta name="description" content="Explore EzyHR's illustrative pricing plans — Starter, Growth, and Enterprise. Simple, transparent pricing for HR teams of all sizes.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%235146E5'/><path d='M16 5L7 10V22L16 27L25 22V10Z' stroke='white' stroke-width='2' fill='none'/><circle cx='16' cy='16' r='4' fill='white'/></svg>">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<!-- Hero -->
+<section class="page-hero section-sm" style="background:linear-gradient(135deg,#EDEAFF 0%,#E4F1FF 100%)">
+  <div class="container text-center">
+    <div class="section-label" style="margin:0 auto 16px">Illustrative Pricing</div>
+    <h1 class="section-title" style="font-size:clamp(2.5rem,5vw,3.5rem);margin-bottom:16px">Simple pricing, <span>powerful features</span></h1>
+    <p style="font-size:1.0625rem;color:var(--text-secondary);max-width:520px;margin:0 auto 32px;line-height:1.7">Pick the plan that fits your team. All prices are illustrative demo figures and do not represent real commercial pricing.</p>
+
+    <!-- Billing Toggle -->
+    <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:16px">
+      <span class="toggle-label" id="monthlyLabel" style="font-weight:700;color:var(--brand-primary)">Monthly</span>
+      <label class="toggle" for="billingToggle" aria-label="Toggle yearly billing">
+        <input type="checkbox" id="billingToggle">
+        <div class="toggle-track"></div>
+        <div class="toggle-thumb"></div>
+      </label>
+      <span class="toggle-label" id="yearlyLabel">
+        Yearly
+        <span style="background:var(--brand-accent);color:#fff;font-size:0.7rem;font-weight:700;padding:2px 8px;border-radius:20px;margin-left:6px">Save 20%</span>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Cards -->
+<section class="section" style="background:var(--bg-lavender)">
+  <div class="container">
+    <div class="grid-3" style="max-width:1000px;margin:0 auto 64px;align-items:stretch">
+      <!-- Starter -->
+      <div class="pricing-card">
+        <div class="pricing-name">Starter</div>
+        <div style="margin-bottom:4px">
+          <span class="pricing-price" id="starterPrice">₹99</span>
+          <span style="font-size:0.9rem;color:var(--text-muted)">/employee</span>
+        </div>
+        <div class="pricing-period" id="starterPeriod">billed monthly</div>
+        <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:24px;line-height:1.5">For small teams that need essential employee management tools.</p>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Up to 25 employees</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Employee directory &amp; profiles</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Attendance tracking</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Leave management</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Employee self-service</div>
+        <div class="pricing-feature"><svg class="pricing-x" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Payroll processing</div>
+        <div class="pricing-feature"><svg class="pricing-x" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> HR analytics</div>
+        <div class="pricing-feature"><svg class="pricing-x" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Recruitment module</div>
+        <div class="pricing-feature"><svg class="pricing-x" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Performance reviews</div>
+        <a href="book-demo.html" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:24px">Get Started Free</a>
+      </div>
+
+      <!-- Growth (Featured) -->
+      <div class="pricing-card featured" style="margin-top:-12px;margin-bottom:-12px">
+        <div class="pricing-badge">Most Popular</div>
+        <div class="pricing-name">Growth</div>
+        <div style="margin-bottom:4px">
+          <span class="pricing-price" id="growthPrice">₹199</span>
+          <span style="font-size:0.9rem;color:rgba(255,255,255,0.7)">/employee</span>
+        </div>
+        <div class="pricing-period" id="growthPeriod">billed monthly</div>
+        <p style="font-size:0.875rem;color:rgba(255,255,255,0.75);margin-bottom:24px;line-height:1.5">For growing teams that need full HR, payroll, and analytics workflows.</p>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Unlimited employees</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Everything in Starter</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Full payroll management</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> HR analytics &amp; reports</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Performance management</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Recruitment ATS</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Onboarding workflows</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Compliance tracking</div>
+        <div class="pricing-feature"><svg class="pricing-x" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Custom integrations</div>
+        <a href="book-demo.html" class="btn btn-white" style="width:100%;justify-content:center;margin-top:24px">Start Free Trial</a>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="pricing-card">
+        <div class="pricing-name">Enterprise</div>
+        <div style="margin-bottom:4px">
+          <span class="pricing-price" style="font-size:2rem">Custom</span>
+        </div>
+        <div class="pricing-period">tailored pricing for your organization</div>
+        <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:24px;line-height:1.5">For large organizations needing advanced administration, security, and customization.</p>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Everything in Growth</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Custom integrations &amp; API</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Dedicated success manager</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> SLA guarantee &amp; priority support</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Advanced security controls</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Custom branding &amp; SSO</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> On-premise or private cloud</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Custom reports &amp; dashboards</div>
+        <div class="pricing-feature"><svg class="pricing-check" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Multi-region &amp; multi-entity</div>
+        <a href="contact.html" class="btn btn-ghost" style="width:100%;justify-content:center;margin-top:24px">Contact Sales</a>
+      </div>
+    </div>
+
+    <p style="text-align:center;font-size:0.8125rem;color:var(--text-muted);font-style:italic">All prices shown are illustrative demo figures. They do not represent real EzyHR commercial pricing.</p>
+  </div>
+</section>
+
+<!-- Feature Comparison Table -->
+<section class="section" style="background:var(--surface)">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <div class="section-label">Detailed Comparison</div>
+      <h2 class="section-title">Compare all <span>plan features</span></h2>
+    </div>
+
+    <div class="table-wrap reveal">
+      <table class="comparison-table" aria-label="Feature comparison">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Starter</th>
+            <th style="background:var(--bg-lavender);color:var(--brand-primary)">Growth ⭐</th>
+            <th>Enterprise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="4" style="background:var(--bg-main);font-weight:700;font-size:0.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em">Core HR</td></tr>
+          <tr><td>Employee Directory</td><td class="comparison-check">✓</td><td class="comparison-check" style="background:rgba(232,229,255,0.3)">✓</td><td class="comparison-check">✓</td></tr>
+          <tr><td>Employee Profiles</td><td class="comparison-check">✓</td><td class="comparison-check" style="background:rgba(232,229,255,0.3)">✓</td><td class="comparison-check">✓</td></tr>
+          <tr><td>Department Management</td><td class="comparison-check">✓</td><td class="comparison-check" style="background:rgba(232,229,255,0.3)">✓</td><td class="comparison-check">✓</td></tr>
+          <tr><td>Document Storage</td><td>Basic</td><td style="background:rgba(232,229,255,0.3)">Unlimited</td><td>Unlimited + Compliance</td></tr>
+          <tr><td colspan="4" style="background:var(--bg-main);font-weight:700;font-size:0.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em">Attendance &amp; Leave</td></tr>
+          <tr><td>Attendance Tracking</td><td class="comparison-check">✓</td><td class="comparison-check" style="background:rgba(232,229,255,0.3)">✓</td><td class="comparison-check">✓</td></tr>
+          <tr><td>Leave Management</td><td class="comparison-check">✓</td><td class="comparison-check" style="background:rgba(232,229,255,0.3)">✓</td><td class="comparison-check">✓</td></tr>
+          <tr><td>Shift Management</td><td class="comparison-x">✗</td><td class="comparison-check" style="background:rgba(232,229,255,0.3)">✓</td><td class="comparison-check">✓</td></tr>
+          <tr><td colspan="4" style="background:var(--bg-main);font-weight:700;font-size:0.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em">Payroll</td></tr>
+          <tr><td>Payroll Processing</td><td class="comparison-x">✗</td><td class="comparison-check" style="background:rgba(232,229,255,0.3)">✓</td><td class="comparison-check">✓</td></tr>
+          <tr><td>Payslip Generation</td><td class="comparison-x">✗</td><td class="comparison-check" style="background:rgba(232,229,255,0.3)">✓</td><td class="comparison-check">✓</td></tr>
+          <tr><td>Payroll Reports</td><td class="comparison-x">✗</td><td class="comparison-check" style="background:rgba(232,229,255,0.3)">✓</td><td class="comparison-check">✓</td></tr>
+          <tr><td colspan="4" style="background:var(--bg-main);font-weight:700;font-size:0.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em">Analytics &amp; Reports</td></tr>
+          <tr><td>Basic Reports</td><td class="comparison-check">✓</td><td class="comparison-check" style="background:rgba(232,229,255,0.3)">✓</td><td class="comparison-check">✓</td></tr>
+          <tr><td>HR Analytics Dashboard</td><td class="comparison-x">✗</td><td class="comparison-check" style="background:rgba(232,229,255,0.3)">✓</td><td class="comparison-check">✓</td></tr>
+          <tr><td>Custom Reports</td><td class="comparison-x">✗</td><td class="comparison-x" style="background:rgba(232,229,255,0.3)">✗</td><td class="comparison-check">✓</td></tr>
+          <tr><td colspan="4" style="background:var(--bg-main);font-weight:700;font-size:0.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em">Support &amp; Security</td></tr>
+          <tr><td>Support</td><td>Email</td><td style="background:rgba(232,229,255,0.3)">Priority Email + Chat</td><td>Dedicated Manager + Phone</td></tr>
+          <tr><td>SSO / SAML</td><td class="comparison-x">✗</td><td class="comparison-x" style="background:rgba(232,229,255,0.3)">✗</td><td class="comparison-check">✓</td></tr>
+          <tr><td>SLA</td><td class="comparison-x">✗</td><td class="comparison-x" style="background:rgba(232,229,255,0.3)">✗</td><td class="comparison-check">✓</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background:var(--bg-blue)">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <h2 class="section-title">Pricing <span>questions</span></h2>
+    </div>
+    <div style="max-width:720px;margin:0 auto" class="reveal">
+      <div class="accordion-item">
+        <button class="accordion-header"><span class="accordion-title">Are these real prices?</span><div class="accordion-icon">+</div></button>
+        <div class="accordion-body"><p>No. All prices shown are illustrative demo figures created for this frontend demonstration project. They do not represent actual EzyHR commercial pricing. This is a portfolio/demo project.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header"><span class="accordion-title">Is there a free trial?</span><div class="accordion-icon">+</div></button>
+        <div class="accordion-body"><p>The interactive dashboard demo at <a href="app-demo.html">app-demo.html</a> is freely available for exploration. In a real product deployment, a 14-day free trial would typically be offered.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header"><span class="accordion-title">Can I change plans later?</span><div class="accordion-icon">+</div></button>
+        <div class="accordion-body"><p>In a real deployment, EzyHR would allow plan upgrades or downgrades at any time. Upgrades take effect immediately; downgrades take effect at the next billing cycle.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header"><span class="accordion-title">What payment methods are accepted?</span><div class="accordion-icon">+</div></button>
+        <div class="accordion-body"><p>This is a frontend-only demo. In a real product, major credit cards, bank transfers, and regional payment methods would typically be supported.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section section">
+  <div class="container" style="position:relative;z-index:1;text-align:center">
+    <h2 style="font-size:clamp(2rem,4vw,2.75rem);font-weight:900;color:#fff;margin-bottom:20px;font-family:var(--font-heading)">Ready to see EzyHR in action?</h2>
+    <p style="color:rgba(255,255,255,0.8);font-size:1.0625rem;margin-bottom:36px">Book a demo or explore the interactive dashboard right now.</p>
+    <div class="flex-center gap-md cta-buttons">
+      <a href="book-demo.html" class="btn btn-white btn-xl">Book a Demo</a>
+      <a href="app-demo.html" class="btn btn-xl" style="background:rgba(255,255,255,0.15);color:#fff;border:2px solid rgba(255,255,255,0.3)">View Dashboard →</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="assets/js/components.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    initAccordions();
+
+    const toggle = document.getElementById('billingToggle');
+    const monthlyLabel = document.getElementById('monthlyLabel');
+    const yearlyLabel = document.getElementById('yearlyLabel');
+    const starterPrice = document.getElementById('starterPrice');
+    const growthPrice = document.getElementById('growthPrice');
+    const starterPeriod = document.getElementById('starterPeriod');
+    const growthPeriod = document.getElementById('growthPeriod');
+
+    const monthly = { starter: '₹99', growth: '₹199', starterP: 'billed monthly', growthP: 'billed monthly' };
+    const yearly  = { starter: '₹79', growth: '₹159', starterP: 'billed annually (save 20%)', growthP: 'billed annually (save 20%)' };
+
+    toggle?.addEventListener('change', () => {
+      const isYearly = toggle.checked;
+      const d = isYearly ? yearly : monthly;
+      if (starterPrice) starterPrice.textContent = d.starter;
+      if (growthPrice) growthPrice.textContent = d.growth;
+      if (starterPeriod) starterPeriod.textContent = d.starterP;
+      if (growthPeriod) growthPeriod.textContent = d.growthP;
+      monthlyLabel.style.color = isYearly ? 'var(--text-muted)' : 'var(--brand-primary)';
+      monthlyLabel.style.fontWeight = isYearly ? '400' : '700';
+    });
+  });
+</script>
+</body>
+</html>

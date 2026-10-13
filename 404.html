@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found | EzyHR</title>
+  <meta name="description" content="The page you are looking for cannot be found. Return to the EzyHR homepage or explore our HR & payroll platform.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%235146E5'/><path d='M16 5L7 10V22L16 27L25 22V10Z' stroke='white' stroke-width='2' fill='none'/><circle cx='16' cy='16' r='4' fill='white'/></svg>">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body style="min-height:100vh;display:flex;flex-direction:column">
+<div id="nav-placeholder"></div>
+
+<!-- 404 Hero Container -->
+<main style="flex:1;display:flex;align-items:center;justify-content:center;padding:80px 20px;background:linear-gradient(135deg,#EDEAFF 0%,#E4F1FF 100%)">
+  <div class="container text-center" style="max-width:680px">
+    
+    <div style="font-size:clamp(5rem,10vw,8rem);font-weight:900;color:var(--brand-primary);font-family:var(--font-heading);line-height:1;margin-bottom:12px;text-shadow:0 10px 30px rgba(81,70,229,0.15)">
+      404
+    </div>
+
+    <div class="section-label" style="margin-bottom:16px;background:rgba(81,70,229,0.12);color:var(--brand-primary)">
+      Page Not Located
+    </div>
+
+    <h1 style="font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:900;margin-bottom:16px;font-family:var(--font-heading)">
+      Looks like this personnel file is missing!
+    </h1>
+
+    <p style="font-size:1.125rem;color:var(--text-secondary);line-height:1.7;margin-bottom:32px;max-width:540px;margin-left:auto;margin-right:auto">
+      The link you clicked may have moved or been updated. Let's get you back on track to exploring modern workforce operations.
+    </p>
+
+    <!-- Navigation Search Bar -->
+    <div style="position:relative;max-width:440px;margin:0 auto 36px">
+      <input type="text" id="notFoundSearch" placeholder="Search pages (e.g. payroll, demo, pricing)..." style="width:100%;padding:14px 18px 14px 44px;border-radius:var(--radius-md);border:1px solid var(--border-soft);background:var(--surface);font-size:0.9375rem;box-shadow:var(--shadow-card)">
+      <span style="position:absolute;left:16px;top:50%;transform:translateY(-50%);font-size:1.1rem;color:var(--text-muted)">🔍</span>
+    </div>
+
+    <!-- Quick Action Links -->
+    <div class="flex gap-sm justify-center" style="flex-wrap:wrap;margin-bottom:36px">
+      <a href="index.html" class="btn btn-primary btn-lg">Return to Homepage</a>
+      <a href="app-demo.html" class="btn btn-secondary btn-lg">Interactive Dashboard Demo</a>
+      <a href="features.html" class="btn btn-ghost btn-lg" style="border:1px solid var(--border-soft)">Explore Features</a>
+    </div>
+
+    <!-- Helpful Links Grid -->
+    <div style="background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-card);display:grid;grid-template-columns:repeat(auto-fit, minmax(130px, 1fr));gap:12px;font-size:0.875rem">
+      <a href="employee-management.html" style="color:var(--brand-primary);font-weight:600">Employee Directory →</a>
+      <a href="payroll.html" style="color:var(--brand-primary);font-weight:600">Payroll Engine →</a>
+      <a href="attendance.html" style="color:var(--brand-primary);font-weight:600">Attendance Tracker →</a>
+      <a href="pricing.html" style="color:var(--brand-primary);font-weight:600">Pricing Plans →</a>
+      <a href="contact.html" style="color:var(--brand-primary);font-weight:600">Contact Team →</a>
+    </div>
+
+  </div>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="assets/js/components.js"></script>
+<script>
+  document.getElementById('notFoundSearch').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      const q = e.target.value.toLowerCase().trim();
+      if (q.includes('pay') || q.includes('sal')) window.location.href = 'payroll.html';
+      else if (q.includes('demo') || q.includes('app') || q.includes('dash')) window.location.href = 'app-demo.html';
+      else if (q.includes('pric') || q.includes('cost')) window.location.href = 'pricing.html';
+      else if (q.includes('emp') || q.includes('staff')) window.location.href = 'employee-management.html';
+      else if (q.includes('feat')) window.location.href = 'features.html';
+      else window.location.href = 'features.html';
+    }
+  });
+</script>
+</body>
+</html>

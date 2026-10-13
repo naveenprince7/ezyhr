@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Self-Service (ESS) Portal — EzyHR</title>
+  <meta name="description" content="Put HR operations in your employees' hands with EzyHR's mobile-first Self-Service Portal. Apply for leaves, download payslips, claim expenses, and update details.">
+  <meta property="og:title" content="Employee Self-Service (ESS) Portal — EzyHR">
+  <meta property="og:description" content="A consumer-grade mobile portal your employees will actually love using.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%235146E5'/><path d='M16 5L7 10V22L16 27L25 22V10Z' stroke='white' stroke-width='2' fill='none'/><circle cx='16' cy='16' r='4' fill='white'/></svg>">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<!-- Hero Section (Fuchsia/Pink Tint) -->
+<section class="page-hero section" style="background:linear-gradient(135deg,#FBEAF3 0%,#EDE9FE 50%,#E4F1FF 100%)">
+  <div class="container">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html">Home</a><span>/</span><a href="features.html">Product</a><span>/</span><span>Self-Service</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center">
+      <div>
+        <div class="section-label" style="background:rgba(147,51,234,0.12);color:#9333EA;margin-bottom:16px">Consumer-Grade Portal</div>
+        <h1 class="section-title" style="font-size:clamp(2.5rem,4.5vw,3.5rem);margin-bottom:20px">
+          The employee app your team will <span>actually enjoy using</span>
+        </h1>
+        <p style="font-size:1.125rem;color:var(--text-secondary);line-height:1.75;margin-bottom:32px">
+          Empower employees to check attendance, download tax forms, apply for time-off, and claim travel reimbursements in seconds—on both web and mobile.
+        </p>
+        <div class="flex gap-sm" style="flex-wrap:wrap">
+          <a href="app-demo.html" class="btn btn-primary btn-lg" style="background:#9333EA;border-color:#9333EA">Try Self-Service in Demo</a>
+          <a href="book-demo.html" class="btn btn-secondary btn-lg">Schedule Tour</a>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Mobile Portal Phone Frame Mockup -->
+      <div class="animate-fadeup" style="display:flex;justify-content:center">
+        <div style="width:100%;max-width:340px;background:var(--surface);border:2px solid var(--border-soft);border-radius:32px;padding:24px;box-shadow:var(--shadow-hover);position:relative">
+          <!-- Phone Speaker Notch -->
+          <div style="width:80px;height:4px;background:var(--border-soft);border-radius:2px;margin:0 auto 18px"></div>
+
+          <!-- Header User Info -->
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
+            <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#9333EA,#5146E5);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700">AK</div>
+            <div>
+              <div style="font-size:0.9375rem;font-weight:800">Alex Kumar</div>
+              <div style="font-size:0.75rem;color:var(--text-muted)">Lead Architect · EMP-1001</div>
+            </div>
+          </div>
+
+          <!-- Quick Actions Grid -->
+          <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:10px;margin-bottom:20px">
+            <div style="background:var(--bg-lavender);border-radius:12px;padding:12px 6px;text-align:center">
+              <div style="font-size:1.25rem;margin-bottom:4px">🏖️</div>
+              <div style="font-size:0.7rem;font-weight:700;color:var(--text-primary)">Apply Leave</div>
+            </div>
+            <div style="background:var(--bg-blue);border-radius:12px;padding:12px 6px;text-align:center">
+              <div style="font-size:1.25rem;margin-bottom:4px">📄</div>
+              <div style="font-size:0.7rem;font-weight:700;color:var(--text-primary)">Payslips</div>
+            </div>
+            <div style="background:var(--bg-teal);border-radius:12px;padding:12px 6px;text-align:center">
+              <div style="font-size:1.25rem;margin-bottom:4px">💳</div>
+              <div style="font-size:0.7rem;font-weight:700;color:var(--text-primary)">Expenses</div>
+            </div>
+          </div>
+
+          <!-- Latest Payslip Box -->
+          <div style="background:var(--surface-soft);border:1px solid var(--border-soft);border-radius:12px;padding:14px;margin-bottom:14px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+              <span style="font-size:0.75rem;color:var(--text-muted);font-weight:600">LATEST PAYSLIP</span>
+              <span style="font-size:0.65rem;background:#E2F7F1;color:#198B70;padding:2px 8px;border-radius:999px;font-weight:700">Oct 2024</span>
+            </div>
+            <div style="font-size:1.125rem;font-weight:900;color:var(--text-primary)">₹1,62,400</div>
+            <div style="font-size:0.7rem;color:var(--brand-primary);font-weight:600;margin-top:4px">Tap to download PDF →</div>
+          </div>
+
+          <!-- Company Notice Preview -->
+          <div style="background:var(--bg-peach);border-radius:12px;padding:12px;font-size:0.75rem">
+            <span style="font-weight:700;color:#B45309">📢 Diwali Holiday Notice:</span>
+            <span style="color:var(--text-secondary)"> Office closed Oct 31 – Nov 2. Enjoy the festivities!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Breakdown -->
+<section class="section" style="background:var(--surface)">
+  <div class="container">
+    <div class="text-center" style="max-width:680px;margin:0 auto 56px">
+      <div class="section-label" style="margin-bottom:12px">Capabilities</div>
+      <h2 class="section-title">Cut HR query tickets <span>by up to 70%</span></h2>
+      <p style="color:var(--text-secondary);line-height:1.7">When employees can resolve routine requests independently, HR teams can focus on growth.</p>
+    </div>
+
+    <div class="grid grid-3" style="gap:28px">
+      <div class="card reveal" style="border-top:4px solid #9333EA">
+        <div style="width:44px;height:44px;border-radius:12px;background:#F3E8FF;color:#9333EA;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">📱</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Instant Payslip Downloads</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Employees can access complete historical payslips and tax withholding summaries anytime, eliminating repetitive email requests to payroll teams.</p>
+      </div>
+
+      <div class="card reveal" style="border-top:4px solid #5146E5">
+        <div style="width:44px;height:44px;border-radius:12px;background:#EDE9FE;color:#5146E5;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">🏝️</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Leave Quota Transparency</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Always know how many days of annual, sick, or casual leave are remaining, with an integrated calendar showing upcoming company public holidays.</p>
+      </div>
+
+      <div class="card reveal" style="border-top:4px solid #198B70">
+        <div style="width:44px;height:44px;border-radius:12px;background:#E2F7F1;color:#198B70;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">🧾</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Fast Expense Reimbursements</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Snap photos of food, travel, or client entertainment receipts, submit expense reports with 1 click, and track reimbursement status in real time.</p>
+      </div>
+
+      <div class="card reveal" style="border-top:4px solid #2563EB">
+        <div style="width:44px;height:44px;border-radius:12px;background:#E4F1FF;color:#2563EB;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">🔒</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Self-Service Profile Updates</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Employees can securely update personal phone numbers, home addresses, emergency contacts, and bank accounts subject to HR verification.</p>
+      </div>
+
+      <div class="card reveal" style="border-top:4px solid #D97706">
+        <div style="width:44px;height:44px;border-radius:12px;background:#FEF3C7;color:#D97706;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">📣</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Company Townhall Feed</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Keep everyone connected with an organization-wide news board for CEO announcements, new hire welcomes, and peer praise shoutouts.</p>
+      </div>
+
+      <div class="card reveal" style="border-top:4px solid #DB2777">
+        <div style="width:44px;height:44px;border-radius:12px;background:#FCE7F3;color:#DB2777;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:20px">🎫</div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">Internal Helpdesk Ticketing</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6">Raise quick help requests for IT equipment issues, letter requests (bonafide / visa letters), or payroll inquiries with trackable status.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQs -->
+<section class="section" style="background:var(--bg-pink)">
+  <div class="container" style="max-width:800px">
+    <div class="text-center" style="margin-bottom:44px">
+      <div class="section-label" style="background:#fff;color:#9333EA;margin-bottom:12px">FAQs</div>
+      <h2 class="section-title">Common questions about <span>Self-Service</span></h2>
+    </div>
+
+    <div class="accordion-wrap">
+      <div class="accordion-item open">
+        <button class="accordion-header">
+          <span>Can employees edit sensitive payroll information directly?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Any edits to critical data such as bank account numbers or tax identification codes trigger an approval notification to HR before updating the live payroll system.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Is the self-service portal accessible on mobile phones?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Yes! EzyHR is built as a responsive Progressive Web Application (PWA) that looks and behaves like a native mobile app on iOS and Android devices without requiring heavy app store downloads.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Can employees view their colleagues' contact details?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Employees have access to a clean peer directory showing department, title, and work email, while private personal numbers remain protected based on company privacy settings.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="background:linear-gradient(135deg,#6B21A8 0%,#3B0764 100%);color:#fff">
+  <div class="container text-center" style="max-width:680px">
+    <h2 style="font-size:clamp(2rem,4vw,2.5rem);font-weight:900;margin-bottom:16px;font-family:var(--font-heading)">
+      Experience the self-service dashboard
+    </h2>
+    <p style="font-size:1.0625rem;opacity:0.9;line-height:1.7;margin-bottom:28px">
+      See how employees interact with payslips, leaves, and notifications in our interactive demo.
+    </p>
+    <div class="flex gap-sm justify-center">
+      <a href="app-demo.html" class="btn btn-secondary btn-lg">Launch Interactive Demo</a>
+      <a href="book-demo.html" class="btn btn-accent btn-lg" style="background:#fff;color:#6B21A8">Book a Demo</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="assets/js/components.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    initAccordions('.accordion-item');
+  });
+</script>
+</body>
+</html>

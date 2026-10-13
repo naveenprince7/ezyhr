@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EzyHR Features — Complete Modern HRMS Platform</title>
+  <meta name="description" content="Explore all features of EzyHR: Core HR, automated payroll, real-time attendance, leave tracking, ATS recruitment, onboarding checklists, OKRs, and analytics.">
+  <meta property="og:title" content="EzyHR Features — Complete HRMS & Payroll Platform">
+  <meta property="og:description" content="Discover the full suite of HR modules built to streamline operations and empower modern teams.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%235146E5'/><path d='M16 5L7 10V22L16 27L25 22V10Z' stroke='white' stroke-width='2' fill='none'/><circle cx='16' cy='16' r='4' fill='white'/></svg>">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <style>
+    .feature-nav-pills {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 6px;
+      background: var(--surface);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      margin-bottom: 40px;
+      scrollbar-width: none;
+    }
+    .feature-nav-pills::-webkit-scrollbar { display: none; }
+    .feature-pill-btn {
+      padding: 10px 20px;
+      border-radius: var(--radius-sm);
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-weight: 600;
+      font-size: 0.9375rem;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: var(--transition-fast);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .feature-pill-btn:hover {
+      background: var(--bg-lavender);
+      color: var(--brand-primary);
+    }
+    .feature-pill-btn.active {
+      background: var(--brand-primary);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(81, 70, 229, 0.25);
+    }
+    .module-card {
+      background: var(--surface);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      transition: var(--transition-base);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+    .module-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--brand-secondary);
+    }
+    .module-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+    .feature-icon-box {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .role-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .role-card {
+      background: var(--surface);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<!-- Hero Section -->
+<section class="page-hero section" style="background:linear-gradient(135deg,#EDEAFF 0%,#E4F1FF 100%)">
+  <div class="container">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html">Home</a><span>/</span><span>Features</span>
+    </div>
+    <div style="max-width:760px">
+      <div class="section-label" style="margin-bottom:16px">Platform Overview</div>
+      <h1 class="section-title" style="font-size:clamp(2.5rem,5vw,3.75rem);margin-bottom:24px">
+        Everything you need to run <br><span>modern people operations</span>
+      </h1>
+      <p style="font-size:1.1875rem;color:var(--text-secondary);line-height:1.75;max-width:640px;margin-bottom:32px">
+        From applicant tracking to automated payroll and continuous performance appraisals, EzyHR unites your entire workforce lifecycle in one delightful platform.
+      </p>
+      <div class="flex gap-sm" style="flex-wrap:wrap">
+        <a href="app-demo.html" class="btn btn-primary btn-lg">Explore Live Demo</a>
+        <a href="book-demo.html" class="btn btn-secondary btn-lg">Schedule Guided Tour</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Category Navigation Bar -->
+<section style="background:var(--bg-main);padding:30px 0 0">
+  <div class="container">
+    <div class="feature-nav-pills" id="featurePills" role="tablist">
+      <button class="feature-pill-btn active" data-filter="all" role="tab" aria-selected="true">
+        <span>✨</span> All Modules (10)
+      </button>
+      <button class="feature-pill-btn" data-filter="core" role="tab" aria-selected="false">
+        <span>👥</span> Core HR & Directory
+      </button>
+      <button class="feature-pill-btn" data-filter="pay-time" role="tab" aria-selected="false">
+        <span>💰</span> Payroll & Attendance
+      </button>
+      <button class="feature-pill-btn" data-filter="talent" role="tab" aria-selected="false">
+        <span>🎯</span> Talent & Performance
+      </button>
+      <button class="feature-pill-btn" data-filter="operations" role="tab" aria-selected="false">
+        <span>📊</span> Analytics & Compliance
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Modules Grid Section -->
+<section class="section" style="background:var(--bg-main)">
+  <div class="container">
+    <div class="grid grid-3" id="featuresGrid" style="gap:28px">
+      
+      <!-- 1. Employee Management -->
+      <div class="module-card reveal" data-category="core">
+        <div>
+          <div class="feature-icon-box" style="background:#EDE9FE;color:#5146E5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <span class="module-badge" style="background:#EDE9FE;color:#5146E5">Core Platform</span>
+          <h3 style="font-size:1.375rem;margin-bottom:12px;font-family:var(--font-heading)">Employee Management</h3>
+          <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:20px">
+            Centralized digital records, customizable profiles, real-time organizational charts, document vaults, and lifecycle audit logs.
+          </p>
+          <ul style="list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:8px;font-size:0.875rem;color:var(--text-secondary)">
+            <li style="display:flex;align-items:center;gap:8px">✓ Dynamic team structure & hierarchy</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Secure document repository with expiries</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Custom profile fields & permission roles</li>
+          </ul>
+        </div>
+        <a href="employee-management.html" class="btn btn-ghost" style="padding-left:0;color:var(--brand-primary);font-weight:700">
+          Explore Employee Management →
+        </a>
+      </div>
+
+      <!-- 2. Payroll -->
+      <div class="module-card reveal" data-category="pay-time">
+        <div>
+          <div class="feature-icon-box" style="background:#E4F1FF;color:#2563EB">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+          </div>
+          <span class="module-badge" style="background:#E4F1FF;color:#2563EB">Finance & Payroll</span>
+          <h3 style="font-size:1.375rem;margin-bottom:12px;font-family:var(--font-heading)">Automated Payroll</h3>
+          <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:20px">
+            1-click salary calculations, statutory deductions (PF, ESI, TDS), customized allowances, automated payslip delivery, and bank disbursement files.
+          </p>
+          <ul style="list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:8px;font-size:0.875rem;color:var(--text-secondary)">
+            <li style="display:flex;align-items:center;gap:8px">✓ Automatic pro-rated salary for new hires</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Password-protected PDF payslips</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Pre-configured tax calculations</li>
+          </ul>
+        </div>
+        <a href="payroll.html" class="btn btn-ghost" style="padding-left:0;color:#2563EB;font-weight:700">
+          Explore Payroll Module →
+        </a>
+      </div>
+
+      <!-- 3. Attendance -->
+      <div class="module-card reveal" data-category="pay-time">
+        <div>
+          <div class="feature-icon-box" style="background:#E2F7F1;color:#198B70">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </div>
+          <span class="module-badge" style="background:#E2F7F1;color:#198B70">Time Tracking</span>
+          <h3 style="font-size:1.375rem;margin-bottom:12px;font-family:var(--font-heading)">Attendance & Shifts</h3>
+          <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:20px">
+            Web & mobile check-ins, biometric synchronization, flexible shift rostering, overtime calculations, and geofencing verification.
+          </p>
+          <ul style="list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:8px;font-size:0.875rem;color:var(--text-secondary)">
+            <li style="display:flex;align-items:center;gap:8px">✓ Automated monthly attendance registers</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Shift rotation & grace period rules</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Real-time presence dashboard</li>
+          </ul>
+        </div>
+        <a href="attendance.html" class="btn btn-ghost" style="padding-left:0;color:#198B70;font-weight:700">
+          Explore Attendance Module →
+        </a>
+      </div>
+
+      <!-- 4. Leave Management -->
+      <div class="module-card reveal" data-category="pay-time">
+        <div>
+          <div class="feature-icon-box" style="background:#FBEAF3;color:#C0448F">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <span class="module-badge" style="background:#FBEAF3;color:#C0448F">Time-off</span>
+          <h3 style="font-size:1.375rem;margin-bottom:12px;font-family:var(--font-heading)">Leave Management</h3>
+          <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:20px">
+            Configurable leave policies (paid, sick, casual, parental), multi-tier approval chains, live balance tracking, and company holiday calendars.
+          </p>
+          <ul style="list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:8px;font-size:0.875rem;color:var(--text-secondary)">
+            <li style="display:flex;align-items:center;gap:8px">✓ Half-day & hourly leave options</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Carry-forward & encashment workflows</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Calendar sync (Google/Outlook)</li>
+          </ul>
+        </div>
+        <a href="leave-management.html" class="btn btn-ghost" style="padding-left:0;color:#C0448F;font-weight:700">
+          Explore Leave Management →
+        </a>
+      </div>
+
+      <!-- 5. Recruitment -->
+      <div class="module-card reveal" data-category="talent">
+        <div>
+          <div class="feature-icon-box" style="background:#FFF0E4;color:#A05A28">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </div>
+          <span class="module-badge" style="background:#FFF0E4;color:#A05A28">Hiring & ATS</span>
+          <h3 style="font-size:1.375rem;margin-bottom:12px;font-family:var(--font-heading)">Recruitment & ATS</h3>
+          <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:20px">
+            Publish branded job openings, track candidate pipelines with drag-and-drop Kanban boards, manage interview scorecards, and send offers.
+          </p>
+          <ul style="list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:8px;font-size:0.875rem;color:var(--text-secondary)">
+            <li style="display:flex;align-items:center;gap:8px">✓ Visual hiring pipeline stages</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Collaborative interviewer evaluations</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Automated rejection & offer templates</li>
+          </ul>
+        </div>
+        <a href="recruitment.html" class="btn btn-ghost" style="padding-left:0;color:#A05A28;font-weight:700">
+          Explore Recruitment ATS →
+        </a>
+      </div>
+
+      <!-- 6. Onboarding -->
+      <div class="module-card reveal" data-category="talent">
+        <div>
+          <div class="feature-icon-box" style="background:#FFF0E4;color:#E65100">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
+          </div>
+          <span class="module-badge" style="background:#FFF0E4;color:#E65100">Talent Journey</span>
+          <h3 style="font-size:1.375rem;margin-bottom:12px;font-family:var(--font-heading)">Digital Onboarding</h3>
+          <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:20px">
+            Paperless pre-boarding checklists, digital signatures, asset provisioning tracking, welcome orientation packets, and day-one readiness.
+          </p>
+          <ul style="list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:8px;font-size:0.875rem;color:var(--text-secondary)">
+            <li style="display:flex;align-items:center;gap:8px">✓ Self-guided new hire document upload</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ IT hardware & software assignment logs</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Buddy assignment & intro workflows</li>
+          </ul>
+        </div>
+        <a href="onboarding.html" class="btn btn-ghost" style="padding-left:0;color:#E65100;font-weight:700">
+          Explore Onboarding →
+        </a>
+      </div>
+
+      <!-- 7. Performance -->
+      <div class="module-card reveal" data-category="talent">
+        <div>
+          <div class="feature-icon-box" style="background:#E8E5FF;color:#5146E5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <span class="module-badge" style="background:#E8E5FF;color:#5146E5">Performance</span>
+          <h3 style="font-size:1.375rem;margin-bottom:12px;font-family:var(--font-heading)">Performance & OKRs</h3>
+          <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:20px">
+            Continuous feedback, quarterly OKR tracking, customizable 360-degree review cycles, self-evaluations, and talent matrix calibrations.
+          </p>
+          <ul style="list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:8px;font-size:0.875rem;color:var(--text-secondary)">
+            <li style="display:flex;align-items:center;gap:8px">✓ 1-on-1 meeting agenda templates</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Peer recognition & praise shoutouts</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Progress tracking toward team goals</li>
+          </ul>
+        </div>
+        <a href="performance.html" class="btn btn-ghost" style="padding-left:0;color:#5146E5;font-weight:700">
+          Explore Performance Reviews →
+        </a>
+      </div>
+
+      <!-- 8. Self-Service -->
+      <div class="module-card reveal" data-category="core">
+        <div>
+          <div class="feature-icon-box" style="background:#FBEAF3;color:#9333EA">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <span class="module-badge" style="background:#FBEAF3;color:#9333EA">Employee Portal</span>
+          <h3 style="font-size:1.375rem;margin-bottom:12px;font-family:var(--font-heading)">Employee Self-Service (ESS)</h3>
+          <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:20px">
+            Empower employees to check attendance, view and download payslips, request time off, claim reimbursements, and update personal details.
+          </p>
+          <ul style="list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:8px;font-size:0.875rem;color:var(--text-secondary)">
+            <li style="display:flex;align-items:center;gap:8px">✓ Mobile-first, responsive portal</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Fast digital expense claims with receipts</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Internal company announcements board</li>
+          </ul>
+        </div>
+        <a href="employee-self-service.html" class="btn btn-ghost" style="padding-left:0;color:#9333EA;font-weight:700">
+          Explore Self-Service Portal →
+        </a>
+      </div>
+
+      <!-- 9. HR Analytics -->
+      <div class="module-card reveal" data-category="operations">
+        <div>
+          <div class="feature-icon-box" style="background:#E4F1FF;color:#0284C7">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <span class="module-badge" style="background:#E4F1FF;color:#0284C7">Insights</span>
+          <h3 style="font-size:1.375rem;margin-bottom:12px;font-family:var(--font-heading)">HR Analytics & Reports</h3>
+          <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:20px">
+            Actionable intelligence with headcount trends, attrition risks, payroll variance analysis, diversity breakdown, and automated executive reports.
+          </p>
+          <ul style="list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:8px;font-size:0.875rem;color:var(--text-secondary)">
+            <li style="display:flex;align-items:center;gap:8px">✓ Exportable Excel, CSV & PDF reports</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Real-time department cost metrics</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Predictive employee retention indicators</li>
+          </ul>
+        </div>
+        <a href="hr-analytics.html" class="btn btn-ghost" style="padding-left:0;color:#0284C7;font-weight:700">
+          Explore HR Analytics →
+        </a>
+      </div>
+
+      <!-- 10. Compliance -->
+      <div class="module-card reveal" data-category="operations">
+        <div>
+          <div class="feature-icon-box" style="background:#E2F7F1;color:#0D9488">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <span class="module-badge" style="background:#E2F7F1;color:#0D9488">Governance</span>
+          <h3 style="font-size:1.375rem;margin-bottom:12px;font-family:var(--font-heading)">Compliance & Audit</h3>
+          <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:20px">
+            Stay aligned with labor laws, statutory reporting deadlines, security audit logs, data retention regulations, and role-based permissions.
+          </p>
+          <ul style="list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:8px;font-size:0.875rem;color:var(--text-secondary)">
+            <li style="display:flex;align-items:center;gap:8px">✓ Audit trails with immutable timestamps</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Document expiry proactive alerts</li>
+            <li style="display:flex;align-items:center;gap:8px">✓ Configurable privacy policies</li>
+          </ul>
+        </div>
+        <a href="compliance.html" class="btn btn-ghost" style="padding-left:0;color:#0D9488;font-weight:700">
+          Explore Compliance Workflows →
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Role-Based Benefits Section -->
+<section class="section" style="background:var(--surface)">
+  <div class="container">
+    <div class="text-center" style="max-width:680px;margin:0 auto 56px">
+      <div class="section-label" style="margin-bottom:12px">Tailored Value</div>
+      <h2 class="section-title">Designed for every stakeholder in <span>your company</span></h2>
+      <p style="color:var(--text-secondary);line-height:1.7">EzyHR removes friction for employees, gives managers clarity, and delivers business owners peace of mind.</p>
+    </div>
+
+    <div class="role-grid">
+      <!-- For HR Leaders -->
+      <div class="role-card reveal">
+        <div style="width:40px;height:40px;background:#EDE9FE;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#5146E5;font-size:1.25rem;margin-bottom:16px">💼</div>
+        <h3 style="font-size:1.25rem;margin-bottom:12px;font-family:var(--font-heading)">For HR & People Ops</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:16px">Eliminate repetitive paperwork, reduce human errors in payroll, and gain instant visibility into company headcount and attendance.</p>
+        <ul style="list-style:none;padding:0;margin:0;font-size:0.875rem;color:var(--text-secondary);display:flex;flex-direction:column;gap:8px">
+          <li>✨ 80% reduction in manual payroll processing time</li>
+          <li>✨ Single source of truth for all employee records</li>
+          <li>✨ Automated onboarding tasks and approval flows</li>
+        </ul>
+      </div>
+
+      <!-- For Business Founders & CEOs -->
+      <div class="role-card reveal">
+        <div style="width:40px;height:40px;background:#E4F1FF;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#2563EB;font-size:1.25rem;margin-bottom:16px">🚀</div>
+        <h3 style="font-size:1.25rem;margin-bottom:12px;font-family:var(--font-heading)">For Founders & Execs</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:16px">Scalable operational infrastructure that grows with your team from 5 to 5,000 without requiring expensive enterprise consultants.</p>
+        <ul style="list-style:none;padding:0;margin:0;font-size:0.875rem;color:var(--text-secondary);display:flex;flex-direction:column;gap:8px">
+          <li>📈 Complete transparency into payroll expenditure</li>
+          <li>📈 Compliance safeguards to prevent costly penalties</li>
+          <li>📈 Real-time workforce metrics for investor reporting</li>
+        </ul>
+      </div>
+
+      <!-- For Team Members -->
+      <div class="role-card reveal">
+        <div style="width:40px;height:40px;background:#E2F7F1;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#198B70;font-size:1.25rem;margin-bottom:16px">🌟</div>
+        <h3 style="font-size:1.25rem;margin-bottom:12px;font-family:var(--font-heading)">For Employees & Managers</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:16px">Intuitive self-service tools that make applying for leave, checking payslips, and giving performance praise quick and transparent.</p>
+        <ul style="list-style:none;padding:0;margin:0;font-size:0.875rem;color:var(--text-secondary);display:flex;flex-direction:column;gap:8px">
+          <li>📱 Instant mobile access from any device</li>
+          <li>📱 Clear visibility of leave balances & holiday rosters</li>
+          <li>📱 Hassle-free reimbursement & expense claims</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Interactive Feature Comparison Table -->
+<section class="section" style="background:var(--bg-lavender)">
+  <div class="container">
+    <div class="text-center" style="max-width:680px;margin:0 auto 48px">
+      <div class="section-label" style="margin-bottom:12px">Comparison</div>
+      <h2 class="section-title">Why teams choose <span>EzyHR</span> over traditional software</h2>
+      <p style="color:var(--text-secondary);line-height:1.7">A modern platform built with high performance, beautiful aesthetics, and extreme simplicity in mind.</p>
+    </div>
+
+    <div style="background:var(--surface);border-radius:var(--radius-lg);border:1px solid var(--border-soft);overflow-x:auto;box-shadow:var(--shadow-card)">
+      <table style="width:100%;border-collapse:collapse;min-width:600px;font-size:0.9375rem">
+        <thead>
+          <tr style="border-bottom:2px solid var(--border-soft);background:var(--surface-soft)">
+            <th style="padding:18px 24px;text-align:left;font-family:var(--font-heading)">Capability</th>
+            <th style="padding:18px 24px;text-align:center;color:var(--brand-primary);font-family:var(--font-heading);background:rgba(81,70,229,0.06)">EzyHR Modern Suite</th>
+            <th style="padding:18px 24px;text-align:center;color:var(--text-muted);font-family:var(--font-heading)">Legacy HR Softwares</th>
+            <th style="padding:18px 24px;text-align:center;color:var(--text-muted);font-family:var(--font-heading)">Spreadsheets</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border-soft)">
+            <td style="padding:16px 24px;font-weight:600">Setup & Deployment Time</td>
+            <td style="padding:16px 24px;text-align:center;color:var(--success);font-weight:700;background:rgba(81,70,229,0.03)">Less than 15 mins</td>
+            <td style="padding:16px 24px;text-align:center;color:var(--text-muted)">4–12 Weeks</td>
+            <td style="padding:16px 24px;text-align:center;color:var(--text-muted)">Manual buildup</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border-soft)">
+            <td style="padding:16px 24px;font-weight:600">Unified Single Platform</td>
+            <td style="padding:16px 24px;text-align:center;color:var(--success);font-weight:700;background:rgba(81,70,229,0.03)">✓ All 10 Modules Included</td>
+            <td style="padding:16px 24px;text-align:center;color:var(--text-muted)">Fragmented add-ons</td>
+            <td style="padding:16px 24px;text-align:center;color:var(--danger)">✗ Disconnected tabs</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border-soft)">
+            <td style="padding:16px 24px;font-weight:600">Employee Self-Service (ESS)</td>
+            <td style="padding:16px 24px;text-align:center;color:var(--success);font-weight:700;background:rgba(81,70,229,0.03)">✓ Modern Responsive Web/Mobile</td>
+            <td style="padding:16px 24px;text-align:center;color:var(--warning)">Clunky portals</td>
+            <td style="padding:16px 24px;text-align:center;color:var(--danger)">✗ Non-existent</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border-soft)">
+            <td style="padding:16px 24px;font-weight:600">Payroll Calculation Accuracy</td>
+            <td style="padding:16px 24px;text-align:center;color:var(--success);font-weight:700;background:rgba(81,70,229,0.03)">✓ 100% Automated & Tax-aligned</td>
+            <td style="padding:16px 24px;text-align:center;color:var(--text-muted)">Complex batch runs</td>
+            <td style="padding:16px 24px;text-align:center;color:var(--danger)">✗ Prone to formula breaks</td>
+          </tr>
+          <tr>
+            <td style="padding:16px 24px;font-weight:600">Real-time Analytics</td>
+            <td style="padding:16px 24px;text-align:center;color:var(--success);font-weight:700;background:rgba(81,70,229,0.03)">✓ Live interactive charts</td>
+            <td style="padding:16px 24px;text-align:center;color:var(--text-muted)">Overnight batch reports</td>
+            <td style="padding:16px 24px;text-align:center;color:var(--danger)">✗ Static manual graphs</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Accordion -->
+<section class="section" style="background:var(--surface)">
+  <div class="container" style="max-width:840px">
+    <div class="text-center" style="margin-bottom:48px">
+      <div class="section-label" style="margin-bottom:12px">Frequently Asked Questions</div>
+      <h2 class="section-title">Got questions about our <span>platform features?</span></h2>
+    </div>
+
+    <div class="accordion-wrap">
+      <div class="accordion-item open">
+        <button class="accordion-header">
+          <span>Can we use only specific modules or do we have to adopt everything at once?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>You have full flexibility! You can start with Core Employee Management and Leave Tracking on day one, and activate Payroll or Performance Reviews whenever your organization is ready.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>How does the data synchronization between attendance and payroll work?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>At the end of each payroll cycle, EzyHR automatically factors in approved leaves, unpaid time-offs (loss of pay), and logged overtime to calculate exact gross and net pay without manual data transfers.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Can we migrate existing employee records from spreadsheets or older HR systems?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Yes. EzyHR provides straightforward CSV bulk-import templates for employee directories, salary master structures, and past leave balances.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="section" style="background:linear-gradient(135deg,var(--brand-primary) 0%,#312E81 100%);color:#fff">
+  <div class="container text-center" style="max-width:680px">
+    <h2 style="font-size:clamp(2rem,4vw,2.75rem);font-weight:900;margin-bottom:20px;font-family:var(--font-heading)">
+      Ready to simplify your people operations?
+    </h2>
+    <p style="font-size:1.125rem;opacity:0.9;line-height:1.7;margin-bottom:32px">
+      Explore our fully functional dashboard demo or request a personalized walkthrough today.
+    </p>
+    <div class="flex gap-sm justify-center" style="flex-wrap:wrap">
+      <a href="app-demo.html" class="btn btn-secondary btn-lg">Launch Interactive Demo</a>
+      <a href="book-demo.html" class="btn btn-accent btn-lg" style="background:#fff;color:var(--brand-primary)">Book a Demo</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="assets/js/components.js"></script>
+<script>
+  // Filter feature cards by category
+  document.querySelectorAll('#featurePills .feature-pill-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#featurePills .feature-pill-btn').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+
+      const filter = btn.dataset.filter;
+      const cards = document.querySelectorAll('#featuresGrid .module-card');
+      cards.forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Init FAQ accordions
+  document.addEventListener('DOMContentLoaded', () => {
+    initAccordions('.accordion-item');
+  });
+</script>
+</body>
+</html>

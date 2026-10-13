@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EzyHR Blog — People Operations & Payroll Insights</title>
+  <meta name="description" content="Discover actionable ideas on scaling teams, modern payroll compliance, hybrid work culture, and employee retention strategies.">
+  <meta property="og:title" content="EzyHR Blog — HR Insights">
+  <meta property="og:description" content="Expert insights on human resources, payroll automation, and workforce productivity.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%235146E5'/><path d='M16 5L7 10V22L16 27L25 22V10Z' stroke='white' stroke-width='2' fill='none'/><circle cx='16' cy='16' r='4' fill='white'/></svg>">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <style>
+    .blog-card {
+      background: var(--surface);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition-base);
+    }
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--brand-secondary);
+    }
+    .blog-card-img {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      position: relative;
+    }
+    .blog-card-content {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<!-- Hero Section -->
+<section class="page-hero section" style="background:linear-gradient(135deg,#E4F1FF 0%,#EDE9FE 100%)">
+  <div class="container">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html">Home</a><span>/</span><span>Blog</span>
+    </div>
+    <div style="max-width:740px">
+      <div class="section-label" style="margin-bottom:16px">The EzyHR Publication</div>
+      <h1 class="section-title" style="font-size:clamp(2.5rem,5vw,3.75rem);margin-bottom:24px">
+        Insights for leaders building <br><span>high-performing teams</span>
+      </h1>
+      <p style="font-size:1.1875rem;color:var(--text-secondary);line-height:1.75">
+        Actionable articles, compliance deep dives, and modern management frameworks written for people leaders.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Article Hero Banner -->
+<section style="background:var(--bg-main);padding:40px 0 0">
+  <div class="container">
+    <div style="background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-card);display:grid;grid-template-columns:1.2fr 1fr;align-items:center">
+      <div style="padding:48px">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+          <span class="badge" style="background:#EDE9FE;color:#5146E5">Featured Article</span>
+          <span style="font-size:0.8125rem;color:var(--text-muted)">October 10, 2024 · 7 min read</span>
+        </div>
+        <h2 style="font-size:clamp(1.75rem,3vw,2.25rem);font-weight:900;margin-bottom:16px;font-family:var(--font-heading);line-height:1.2">
+          The Death of the Monthly Payroll Spreadsheet: Why Modern Teams Automate
+        </h2>
+        <p style="color:var(--text-secondary);line-height:1.7;margin-bottom:28px;font-size:1rem">
+          Human error in manual formulas costs companies an average of 1.2% in annual payroll variance. Here is why the next generation of fast-growing startups is replacing Excel with unified HRMS engines.
+        </p>
+        <button class="btn btn-primary btn-lg" onclick="openArticleModal('art1')">
+          Read Full Article →
+        </button>
+      </div>
+      <div style="background:linear-gradient(135deg,#5146E5,#7667F5);height:100%;min-height:300px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:5rem;padding:40px">
+        📊
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Articles Grid -->
+<section class="section" style="background:var(--bg-main)">
+  <div class="container">
+    <div class="text-center" style="max-width:680px;margin:0 auto 48px">
+      <div class="section-label" style="margin-bottom:12px">Latest Insights</div>
+      <h2 class="section-title">Articles on <span>People & Culture</span></h2>
+    </div>
+
+    <div class="grid grid-3" style="gap:28px">
+      <!-- Article 2 -->
+      <div class="blog-card reveal">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#E4F1FF,#EDE9FE)">
+          💡
+        </div>
+        <div class="blog-card-content">
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+              <span class="badge" style="background:#E4F1FF;color:#2563EB">Culture & Remote</span>
+              <span style="font-size:0.75rem;color:var(--text-muted)">Oct 04, 2024</span>
+            </div>
+            <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">
+              How to Build Trust in Remote Teams Without Micromanagement
+            </h3>
+            <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:20px">
+              Shifting from tracking minutes worked to measuring genuine deliverables through clear OKRs, asynchronous check-ins, and shared accountability.
+            </p>
+          </div>
+          <button class="btn btn-ghost" style="padding-left:0;color:#2563EB;font-weight:700" onclick="openArticleModal('art2')">
+            Read Article →
+          </button>
+        </div>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="blog-card reveal">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#E2F7F1,#E4F1FF)">
+          🚀
+        </div>
+        <div class="blog-card-content">
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+              <span class="badge" style="background:#E2F7F1;color:#198B70">Onboarding</span>
+              <span style="font-size:0.75rem;color:var(--text-muted)">Sep 28, 2024</span>
+            </div>
+            <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">
+              Why Day One Onboarding Defines First-Year Employee Retention
+            </h3>
+            <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:20px">
+              Employees who experience structured digital onboarding are 69% more likely to remain with an organization past their three-year anniversary.
+            </p>
+          </div>
+          <button class="btn btn-ghost" style="padding-left:0;color:#198B70;font-weight:700" onclick="openArticleModal('art3')">
+            Read Article →
+          </button>
+        </div>
+      </div>
+
+      <!-- Article 4 -->
+      <div class="blog-card reveal">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,#FBEAF3,#EDE9FE)">
+          ⚖️
+        </div>
+        <div class="blog-card-content">
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+              <span class="badge" style="background:#FBEAF3;color:#C0448F">Compliance</span>
+              <span style="font-size:0.75rem;color:var(--text-muted)">Sep 19, 2024</span>
+            </div>
+            <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:12px;font-family:var(--font-heading)">
+              Statutory Compliance Checklist for High-Growth Startups
+            </h3>
+            <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:20px">
+              Provident Fund, ESI registers, quarterly tax filings, and labor law regulations: what founders and HR heads need to maintain before fundraising audits.
+            </p>
+          </div>
+          <button class="btn btn-ghost" style="padding-left:0;color:#C0448F;font-weight:700" onclick="openArticleModal('art4')">
+            Read Article →
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Full Article Reader Modal -->
+<div class="modal-overlay" id="articleModal" role="dialog" aria-modal="true">
+  <div class="modal" style="max-width:780px;max-height:85vh;overflow-y:auto;padding:40px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:24px">
+      <span class="badge" id="modalArtBadge" style="background:#EDE9FE;color:#5146E5">Featured Article</span>
+      <button onclick="closeArticleModal()" class="btn btn-sm btn-ghost" style="font-size:1.25rem;padding:4px 8px">✕</button>
+    </div>
+
+    <h2 id="modalArtTitle" style="font-size:1.875rem;font-weight:900;margin-bottom:16px;font-family:var(--font-heading);line-height:1.3">
+      The Death of the Monthly Payroll Spreadsheet: Why Modern Teams Automate
+    </h2>
+
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:28px;padding-bottom:16px;border-bottom:1px solid var(--border-soft);font-size:0.875rem;color:var(--text-muted)">
+      <span>By EzyHR Research Team</span> · <span>Published Oct 2024</span> · <span>Educational Whitepaper</span>
+    </div>
+
+    <div id="modalArtBody" style="color:var(--text-secondary);line-height:1.8;font-size:1rem;display:flex;flex-direction:column;gap:18px">
+      <!-- Injected by script -->
+    </div>
+
+    <div style="margin-top:36px;padding-top:24px;border-top:1px solid var(--border-soft);display:flex;justify-content:space-between;align-items:center">
+      <button onclick="closeArticleModal()" class="btn btn-secondary">Close Article</button>
+      <a href="app-demo.html" class="btn btn-primary">See EzyHR in Action →</a>
+    </div>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script src="assets/js/components.js"></script>
+<script>
+  const articlesData = {
+    art1: {
+      title: "The Death of the Monthly Payroll Spreadsheet: Why Modern Teams Automate",
+      badge: "Featured Article",
+      content: `
+        <p>For decades, the standard monthly payroll routine in small and mid-sized enterprises followed a familiar, stressful pattern: around the 25th of each month, an HR specialist would open a massive Excel workbook with thirty tabs, copy biometric attendance logs from a thumb drive, cross-reference leaves from an email inbox, and run complex macro calculations.</p>
+        <p><strong>The Hidden Costs of Spreadsheet Payroll:</strong> While spreadsheets cost virtually nothing upfront, their operational risks are severe:</p>
+        <ul>
+          <li><strong>Formula Corruption:</strong> A single accidental row insertion or relative reference overwrite can silently shift deductions across hundreds of employees.</li>
+          <li><strong>Lack of Real-time Sync:</strong> Leaves approved on the 29th frequently get missed, leading to awkward retroactive salary clawbacks or adjustments in the subsequent month.</li>
+          <li><strong>Data Security & Privacy:</strong> Unencrypted spreadsheets stored on local hard drives or emailed internally expose sensitive compensation data to unauthorized eyes.</li>
+        </ul>
+        <p><strong>The Modern Alternative:</strong> Unified HRMS platforms like EzyHR bring employee master records, biometric clock-ins, leave approvals, and tax deduction formulas into a single continuous calculation engine. When payday arrives, calculating gross-to-net payouts requires literally one click, generating bank-ready disbursement sheets and delivering encrypted PDFs directly to employee mobile apps.</p>
+        <p>Organizations that make the switch report saving between 15 to 25 hours per HR team member every month, allowing them to redirect their energy toward talent development and culture.</p>
+      `
+    },
+    art2: {
+      title: "How to Build Trust in Remote Teams Without Micromanagement",
+      badge: "Culture & Remote",
+      content: `
+        <p>Managing remote and hybrid teams often creates anxiety for traditional leaders: <em>"How do I know my employees are actually working?"</em> The instinctive reaction—installing intrusive keystroke loggers or enforcing constant webcam check-ins—almost always destroys employee morale and triggers high turnover.</p>
+        <p>High-trust organizations solve this problem by decoupling attendance from performance:</p>
+        <ul>
+          <li><strong>Focus on Objectives over Hours:</strong> Using transparent OKRs (Objectives and Key Results), every team member knows their exact targets for the sprint or quarter.</li>
+          <li><strong>Asynchronous Standups:</strong> Replace 45-minute daily video calls with lightweight written updates outlining what was completed and what blockers exist.</li>
+          <li><strong>Frictionless Self-Service:</strong> Give team members autonomy over their working hours and transparent visibility into their own leave balances and attendance regularizations.</li>
+        </ul>
+        <p>When employees are treated like capable professionals with clear metrics, productivity naturally increases without the need for invasive surveillance.</p>
+      `
+    },
+    art3: {
+      title: "Why Day One Onboarding Defines First-Year Employee Retention",
+      badge: "Onboarding",
+      content: `
+        <p>Research consistently shows that 20% of employee turnover happens within the first 45 days of joining. The primary culprit? A chaotic, unorganized onboarding experience where the new recruit spends their first morning waiting for laptop credentials and filling out redundant paper forms.</p>
+        <p><strong>The Principles of Exceptional Digital Onboarding:</strong></p>
+        <ol>
+          <li><strong>Pre-boarding Completion:</strong> All statutory document uploads, tax declarations, and bank verifications should happen digitally before day one.</li>
+          <li><strong>Day-One Readiness:</strong> IT accounts (Slack, Email, GitHub) and hardware equipment should be configured and waiting on the employee's desk or front door.</li>
+          <li><strong>The Peer Buddy System:</strong> Assigning a designated non-manager peer mentor provides psychological safety and helps the new hire navigate team traditions.</li>
+        </ol>
+      `
+    },
+    art4: {
+      title: "Statutory Compliance Checklist for High-Growth Startups",
+      badge: "Compliance",
+      content: `
+        <p>As startups scale from 10 to 100 employees, legal and labor compliance shifts from an afterthought to a core operational requirement. Failure to file statutory registers on time can result in substantial monetary penalties and complicate venture capital due diligence.</p>
+        <p>Essential operational pillars to audit monthly include:</p>
+        <ul>
+          <li>Timely PF (Provident Fund) and ESI remittances before the 15th of each month.</li>
+          <li>Quarterly TDS withholding returns (Form 24Q) with verified PAN records.</li>
+          <li>Digital wage registers and overtime ledgers maintained with tamper-evident audit trails.</li>
+          <li>Proactive document tracking for expiring work permits and certifications.</li>
+        </ul>
+      `
+    }
+  };
+
+  function openArticleModal(artKey) {
+    const data = articlesData[artKey] || articlesData['art1'];
+    document.getElementById('modalArtTitle').textContent = data.title;
+    document.getElementById('modalArtBadge').textContent = data.badge;
+    document.getElementById('modalArtBody').innerHTML = data.content;
+    openModal('articleModal');
+  }
+
+  function closeArticleModal() {
+    closeModal('articleModal');
+  }
+</script>
+</body>
+</html>

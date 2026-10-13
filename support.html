@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Support & Help Center — EzyHR</title>
+  <meta name="description" content="Get help with EzyHR: search help articles, check system status, submit a support ticket, or connect with our technical operations team.">
+  <meta property="og:title" content="Customer Support & Help Center — EzyHR">
+  <meta property="og:description" content="We're here to assist you with every aspect of EzyHR.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%235146E5'/><path d='M16 5L7 10V22L16 27L25 22V10Z' stroke='white' stroke-width='2' fill='none'/><circle cx='16' cy='16' r='4' fill='white'/></svg>">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<!-- Hero Section -->
+<section class="page-hero section" style="background:linear-gradient(135deg,#E4F1FF 0%,#EDE9FE 100%)">
+  <div class="container">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html">Home</a><span>/</span><span>Support</span>
+    </div>
+    <div style="max-width:740px">
+      <div class="section-label" style="background:rgba(37,99,235,0.12);color:#2563EB;margin-bottom:16px">Help Center</div>
+      <h1 class="section-title" style="font-size:clamp(2.5rem,5vw,3.75rem);margin-bottom:24px">
+        How can our team <span>help you today?</span>
+      </h1>
+      <p style="font-size:1.1875rem;color:var(--text-secondary);line-height:1.75;margin-bottom:32px">
+        Search our knowledge base, submit a priority technical support ticket, or look up the status of an existing inquiry.
+      </p>
+
+      <!-- Search Input -->
+      <div style="position:relative;max-width:560px">
+        <input type="text" id="supportSearch" placeholder="Search help docs (e.g. salary calculation, invite admin, biometrics)..." style="width:100%;padding:16px 20px 16px 48px;border-radius:var(--radius-md);border:1px solid var(--border-soft);background:var(--surface);font-size:1rem;box-shadow:var(--shadow-card)">
+        <span style="position:absolute;left:18px;top:50%;transform:translateY(-50%);font-size:1.2rem;color:var(--text-muted)">🔍</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Support Channels Grid -->
+<section style="background:var(--bg-main);padding:40px 0 0">
+  <div class="container">
+    <div class="grid grid-3" style="gap:24px">
+      <div style="background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--radius-md);padding:24px">
+        <div style="font-size:1.75rem;margin-bottom:12px">📚</div>
+        <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:6px">Knowledge Base</h3>
+        <p style="color:var(--text-secondary);font-size:0.875rem;line-height:1.6;margin-bottom:14px">Step-by-step walkthroughs and guides for administrators.</p>
+        <a href="resources.html" style="color:var(--brand-primary);font-weight:700;font-size:0.875rem">Browse Guides →</a>
+      </div>
+
+      <div style="background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--radius-md);padding:24px">
+        <div style="font-size:1.75rem;margin-bottom:12px">⚡</div>
+        <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:6px">System Status</h3>
+        <p style="color:var(--text-secondary);font-size:0.875rem;line-height:1.6;margin-bottom:14px">All core services (Payroll, Auth, Clock-in) operating normally.</p>
+        <span class="badge badge-success" style="font-size:0.75rem">99.98% Uptime</span>
+      </div>
+
+      <div style="background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--radius-md);padding:24px">
+        <div style="font-size:1.75rem;margin-bottom:12px">📧</div>
+        <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:6px">Priority Desk</h3>
+        <p style="color:var(--text-secondary);font-size:0.875rem;line-height:1.6;margin-bottom:14px">Direct ticket line for enterprise billing & technical help.</p>
+        <a href="#ticketFormSection" style="color:var(--brand-primary);font-weight:700;font-size:0.875rem">Open a Ticket ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ticket Submission and Status Lookup Section -->
+<section class="section" id="ticketFormSection" style="background:var(--bg-main)">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start">
+      
+      <!-- Left: Submit a Ticket Form -->
+      <div style="background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--radius-lg);padding:36px;box-shadow:var(--shadow-card)">
+        <h2 style="font-size:1.375rem;font-weight:800;margin-bottom:8px;font-family:var(--font-heading)">Submit a Support Ticket</h2>
+        <p style="color:var(--text-secondary);font-size:0.875rem;margin-bottom:24px">Describe the issue and our technical team will respond promptly.</p>
+
+        <form id="supportTicketForm" novalidate>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+            <div>
+              <label for="ticketName" style="display:block;font-size:0.8125rem;font-weight:600;margin-bottom:6px">Your Name *</label>
+              <input type="text" id="ticketName" placeholder="Alex Kumar" required style="width:100%;padding:10px 14px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface-soft)">
+            </div>
+            <div>
+              <label for="ticketEmail" style="display:block;font-size:0.8125rem;font-weight:600;margin-bottom:6px">Account Email *</label>
+              <input type="email" id="ticketEmail" placeholder="alex@company.com" required style="width:100%;padding:10px 14px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface-soft)">
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+            <div>
+              <label for="ticketModule" style="display:block;font-size:0.8125rem;font-weight:600;margin-bottom:6px">Affected Module *</label>
+              <select id="ticketModule" required style="width:100%;padding:10px 14px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface-soft)">
+                <option value="">Select module...</option>
+                <option value="payroll">Automated Payroll</option>
+                <option value="attendance">Biometric Attendance</option>
+                <option value="leave">Leave Approvals</option>
+                <option value="ess">Self-Service Portal</option>
+                <option value="billing">Subscription Billing</option>
+              </select>
+            </div>
+            <div>
+              <label for="ticketPriority" style="display:block;font-size:0.8125rem;font-weight:600;margin-bottom:6px">Priority Level</label>
+              <select id="ticketPriority" style="width:100%;padding:10px 14px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface-soft)">
+                <option value="low">Low (General Question)</option>
+                <option value="medium" selected>Medium (Standard)</option>
+                <option value="high">High (Payroll Run Blocked)</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="margin-bottom:16px">
+            <label for="ticketSubject" style="display:block;font-size:0.8125rem;font-weight:600;margin-bottom:6px">Ticket Subject *</label>
+            <input type="text" id="ticketSubject" placeholder="e.g. Error exporting NEFT banking payout file" required style="width:100%;padding:10px 14px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface-soft)">
+          </div>
+
+          <div style="margin-bottom:24px">
+            <label for="ticketDesc" style="display:block;font-size:0.8125rem;font-weight:600;margin-bottom:6px">Detailed Description *</label>
+            <textarea id="ticketDesc" rows="4" placeholder="Include error messages or steps to reproduce..." required style="width:100%;padding:10px 14px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface-soft);font-family:inherit"></textarea>
+          </div>
+
+          <button type="submit" id="submitTicketBtn" class="btn btn-primary" style="width:100%;justify-content:center">
+            Create Support Ticket
+          </button>
+        </form>
+
+        <div id="ticketSuccessCard" style="display:none;text-align:center;padding:24px 10px">
+          <div style="font-size:2rem;color:var(--success);margin-bottom:12px">✓</div>
+          <h3 style="font-size:1.25rem;font-weight:800;margin-bottom:6px">Ticket Submitted!</h3>
+          <p style="color:var(--text-secondary);font-size:0.875rem;margin-bottom:16px">
+            Your simulated reference ticket ID is <strong id="generatedTicketId" style="color:var(--brand-primary)">#TICK-8042</strong>.
+          </p>
+          <button id="resetTicketFormBtn" class="btn btn-secondary btn-sm">Submit Another Ticket</button>
+        </div>
+      </div>
+
+      <!-- Right: Ticket Status Lookup Simulator -->
+      <div>
+        <div style="background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow-card);margin-bottom:28px">
+          <h3 style="font-size:1.25rem;font-weight:800;margin-bottom:8px;font-family:var(--font-heading)">Track Existing Ticket</h3>
+          <p style="color:var(--text-secondary);font-size:0.875rem;margin-bottom:20px">Enter your ticket number to check current resolution progress.</p>
+
+          <div style="display:flex;gap:10px;margin-bottom:16px">
+            <input type="text" id="lookupInput" placeholder="e.g. TICK-1049" value="TICK-1049" style="flex:1;padding:10px 14px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface-soft)">
+            <button id="lookupBtn" class="btn btn-primary btn-sm">Lookup</button>
+          </div>
+
+          <div id="lookupResult" style="background:var(--bg-lavender);border-radius:var(--radius-sm);padding:16px;font-size:0.875rem">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+              <span style="font-weight:700;color:var(--text-primary)">Ticket #TICK-1049</span>
+              <span class="badge" style="background:#E2F7F1;color:#198B70">In Progress</span>
+            </div>
+            <div style="color:var(--text-secondary);margin-bottom:6px">Subject: Biometric device sync delay</div>
+            <div style="color:var(--text-muted);font-size:0.75rem">Assigned to: Lead Systems Engineer · Est. resolution: &lt; 2 hrs</div>
+          </div>
+        </div>
+
+        <!-- Demonstration Notice -->
+        <div style="background:var(--bg-blue);border:1px solid var(--border-soft);border-radius:var(--radius-md);padding:20px">
+          <div style="font-weight:700;color:#2563EB;font-size:0.875rem;margin-bottom:6px">ℹ️ Prototype Demonstration</div>
+          <div style="color:var(--text-secondary);font-size:0.8125rem;line-height:1.6">
+            Ticket creation and status lookups are fully functional frontend simulations illustrating customer support workflow UX.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="assets/js/components.js"></script>
+<script>
+  // Ticket form submission
+  const ticketForm = document.getElementById('supportTicketForm');
+  const ticketSuccess = document.getElementById('ticketSuccessCard');
+  const resetBtn = document.getElementById('resetTicketFormBtn');
+  const submitBtn = document.getElementById('submitTicketBtn');
+
+  ticketForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('ticketName').value.trim();
+    const email = document.getElementById('ticketEmail').value.trim();
+    const module = document.getElementById('ticketModule').value;
+    const subject = document.getElementById('ticketSubject').value.trim();
+    const desc = document.getElementById('ticketDesc').value.trim();
+
+    if (name && email && module && subject && desc) {
+      const origText = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = 'Submitting...';
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = origText;
+        const randomId = '#TICK-' + Math.floor(1000 + Math.random() * 9000);
+        document.getElementById('generatedTicketId').textContent = randomId;
+        ticketForm.style.display = 'none';
+        ticketSuccess.style.display = 'block';
+        showToast('Ticket Created', `Your support ticket ${randomId} was received.`, 'success');
+      }, 600);
+    } else {
+      showToast('Incomplete Form', 'Please complete all required fields.', 'warning');
+    }
+  });
+
+  resetBtn.addEventListener('click', () => {
+    ticketForm.reset();
+    ticketForm.style.display = 'block';
+    ticketSuccess.style.display = 'none';
+  });
+
+  // Ticket Lookup Simulation
+  document.getElementById('lookupBtn').addEventListener('click', () => {
+    const val = document.getElementById('lookupInput').value.trim().toUpperCase();
+    const resultBox = document.getElementById('lookupResult');
+    if (!val) {
+      showToast('Enter Ticket ID', 'Please specify a ticket number to look up.', 'info');
+      return;
+    }
+    resultBox.innerHTML = `
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-weight:700;color:var(--text-primary)">Ticket #${val}</span>
+        <span class="badge" style="background:#EDE9FE;color:#5146E5">Under Investigation</span>
+      </div>
+      <div style="color:var(--text-secondary);margin-bottom:6px">Status: Technician analyzing telemetry logs</div>
+      <div style="color:var(--text-muted);font-size:0.75rem">Last activity: 14 minutes ago · Priority: High</div>
+    `;
+    showToast('Ticket Found', `Retrieved telemetry status for #${val}`, 'info');
+  });
+</script>
+</body>
+</html>

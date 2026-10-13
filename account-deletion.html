@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account & Data Deletion Request — EzyHR</title>
+  <meta name="description" content="Request permanent account or data deletion from the EzyHR platform. Understand data retention policies and download your data archive.">
+  <meta property="og:title" content="Account & Data Deletion Request — EzyHR">
+  <meta property="og:description" content="Manage your data deletion request with transparency.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%235146E5'/><path d='M16 5L7 10V22L16 27L25 22V10Z' stroke='white' stroke-width='2' fill='none'/><circle cx='16' cy='16' r='4' fill='white'/></svg>">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<!-- Hero Section -->
+<section class="page-hero section" style="background:linear-gradient(135deg,#FEE2E2 0%,#EDE9FE 100%)">
+  <div class="container">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html">Home</a><span>/</span><span>Legal & Privacy</span><span>/</span><span>Account Deletion</span>
+    </div>
+    <div style="max-width:740px">
+      <div class="section-label" style="background:rgba(217,75,98,0.12);color:var(--danger);margin-bottom:16px">Data Privacy Rights</div>
+      <h1 class="section-title" style="font-size:clamp(2.5rem,5vw,3.5rem);margin-bottom:20px">
+        Account & Data <span>Deletion Request</span>
+      </h1>
+      <p style="font-size:1.125rem;color:var(--text-secondary);line-height:1.75;margin-bottom:20px">
+        We believe you should have complete ownership over your workforce data. Review this guide to export your historical files or submit a permanent purge request.
+      </p>
+
+      <!-- Demonstration Notice -->
+      <div style="background:var(--bg-lavender);border:1px solid var(--border-soft);border-radius:var(--radius-sm);padding:14px 18px;font-size:0.875rem;color:var(--text-secondary)">
+        ℹ️ <strong>Demonstration Note:</strong> This page demonstrates a compliant frontend data deletion request workflow. No actual user accounts or production databases are modified.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Main Deletion Form & Explanations -->
+<section class="section" style="background:var(--surface)">
+  <div class="container" style="max-width:880px">
+    
+    <!-- Critical Warning Box -->
+    <div style="background:#FFF1F2;border:1px solid #FECDD3;border-radius:var(--radius-lg);padding:28px;margin-bottom:40px;display:flex;align-items:flex-start;gap:20px">
+      <div style="font-size:2rem">⚠️</div>
+      <div>
+        <h2 style="font-size:1.25rem;font-weight:800;color:#9F1239;margin-bottom:8px;font-family:var(--font-heading)">Important Considerations Before Deleting</h2>
+        <p style="color:#881337;font-size:0.9375rem;line-height:1.6;margin:0">
+          Account deletion is permanent. Once completed, employee profiles, attendance logs, and past tax slips cannot be recovered. In accordance with statutory tax laws, historical payroll registers may be retained for statutory audit periods (typically 7–8 years) before automated cryptographic erasure.
+        </p>
+      </div>
+    </div>
+
+    <!-- Step 1: Export Data Option -->
+    <div style="background:var(--surface-soft);border:1px solid var(--border-soft);border-radius:var(--radius-lg);padding:32px;margin-bottom:40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px">
+      <div>
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:6px">Download Your Data Archive First</h3>
+        <p style="color:var(--text-secondary);font-size:0.875rem;margin:0">Export all employee CSVs, payslips, and attendance reports into a single ZIP file before requesting deletion.</p>
+      </div>
+      <button class="btn btn-secondary" onclick="showToast('Export Initiated', 'Simulated: Generating full company data archive ZIP...', 'info')">
+        📦 Export Data Archive
+      </button>
+    </div>
+
+    <!-- Step 2: Interactive Deletion Form -->
+    <div style="background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--radius-lg);padding:40px;box-shadow:var(--shadow-card)">
+      <h3 style="font-size:1.375rem;font-weight:800;margin-bottom:12px;font-family:var(--font-heading)">Submit Deletion Request</h3>
+      <p style="color:var(--text-secondary);font-size:0.875rem;margin-bottom:28px">Please provide your verified administrator credentials to authorize the purge request.</p>
+
+      <form id="deletionForm" novalidate>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px">
+          <div>
+            <label for="delName" style="display:block;font-size:0.8125rem;font-weight:600;margin-bottom:6px">Authorized Admin Name *</label>
+            <input type="text" id="delName" placeholder="Alex Kumar" required style="width:100%;padding:12px 14px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface-soft)">
+          </div>
+          <div>
+            <label for="delEmail" style="display:block;font-size:0.8125rem;font-weight:600;margin-bottom:6px">Account Admin Email *</label>
+            <input type="email" id="delEmail" placeholder="admin@company.com" required style="width:100%;padding:12px 14px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface-soft)">
+          </div>
+        </div>
+
+        <div style="margin-bottom:20px">
+          <label for="delReason" style="display:block;font-size:0.8125rem;font-weight:600;margin-bottom:6px">Reason for Account Deletion *</label>
+          <select id="delReason" required style="width:100%;padding:12px 14px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface-soft)">
+            <option value="">Select reason...</option>
+            <option value="closing">Company is closing operations</option>
+            <option value="migrating">Migrating to internal ERP</option>
+            <option value="cost">Reducing software costs</option>
+            <option value="trial">Completed evaluation trial period</option>
+            <option value="other">Other reason</option>
+          </select>
+        </div>
+
+        <div style="margin-bottom:24px">
+          <label for="delConfirmPhrase" style="display:block;font-size:0.8125rem;font-weight:600;margin-bottom:6px">
+            Type <span style="color:var(--danger);font-family:monospace">DELETE-MY-ORGANIZATION</span> to confirm *
+          </label>
+          <input type="text" id="delConfirmPhrase" placeholder="DELETE-MY-ORGANIZATION" required style="width:100%;padding:12px 14px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface-soft)">
+        </div>
+
+        <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:28px">
+          <input type="checkbox" id="delCheckbox" required style="margin-top:4px">
+          <label for="delCheckbox" style="font-size:0.8125rem;color:var(--text-secondary);line-height:1.5">
+            I understand that this action is irreversible and all non-statutory employee profiles, recruitment candidates, and self-service access credentials will be purged permanently after a 14-day grace window.
+          </label>
+        </div>
+
+        <button type="submit" id="delSubmitBtn" class="btn btn-lg" style="width:100%;justify-content:center;background:var(--danger);color:#fff;border:none">
+          Submit Permanent Deletion Request
+        </button>
+      </form>
+
+      <div id="delSuccessCard" style="display:none;text-align:center;padding:30px 10px">
+        <div style="font-size:2.5rem;color:var(--danger);margin-bottom:12px">✓</div>
+        <h4 style="font-size:1.375rem;font-weight:800;color:var(--text-primary);margin-bottom:8px">Deletion Request Logged</h4>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:16px">
+          A security confirmation token has been simulated for your registered email address. Account enters a 14-day hold period.
+        </p>
+        <div style="font-size:0.8125rem;color:var(--text-muted)">Demo project workflow completed.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="assets/js/components.js"></script>
+<script>
+  const form = document.getElementById('deletionForm');
+  const successCard = document.getElementById('delSuccessCard');
+  const submitBtn = document.getElementById('delSubmitBtn');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('delName').value.trim();
+    const email = document.getElementById('delEmail').value.trim();
+    const reason = document.getElementById('delReason').value;
+    const phrase = document.getElementById('delConfirmPhrase').value.trim();
+    const checked = document.getElementById('delCheckbox').checked;
+
+    if (!name || !email || !reason) {
+      showToast('Missing Fields', 'Please complete all required fields.', 'warning');
+      return;
+    }
+
+    if (phrase !== 'DELETE-MY-ORGANIZATION') {
+      showToast('Confirmation Error', 'You must type DELETE-MY-ORGANIZATION exactly as shown.', 'error');
+      return;
+    }
+
+    if (!checked) {
+      showToast('Agreement Required', 'Please check the box confirming your understanding.', 'warning');
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = 'Processing Request...';
+
+    setTimeout(() => {
+      form.style.display = 'none';
+      successCard.style.display = 'block';
+      showToast('Request Registered', 'Simulated deletion ticket logged with 14-day cooling grace period.', 'info');
+    }, 700);
+  });
+</script>
+</body>
+</html>

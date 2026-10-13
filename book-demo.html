@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Demo — EzyHR Modern HRMS & Payroll</title>
+  <meta name="description" content="Schedule a personalized 1-on-1 demonstration of EzyHR. See how our intuitive HR and payroll platform transforms workforce operations.">
+  <meta property="og:title" content="Book a Demo — EzyHR">
+  <meta property="og:description" content="Experience how EzyHR automates payroll, attendance, and employee management.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%235146E5'/><path d='M16 5L7 10V22L16 27L25 22V10Z' stroke='white' stroke-width='2' fill='none'/><circle cx='16' cy='16' r='4' fill='white'/></svg>">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <style>
+    .interest-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border: 1px solid var(--border-soft);
+      border-radius: 999px;
+      font-size: 0.8125rem;
+      background: var(--surface);
+      color: var(--text-secondary);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition-fast);
+    }
+    .interest-pill.selected {
+      background: var(--brand-primary);
+      color: #fff;
+      border-color: var(--brand-primary);
+      box-shadow: 0 4px 10px rgba(81, 70, 229, 0.2);
+    }
+    .slot-btn {
+      padding: 10px 14px;
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-sm);
+      background: var(--surface);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      cursor: pointer;
+      transition: var(--transition-fast);
+      text-align: center;
+    }
+    .slot-btn:hover {
+      border-color: var(--brand-primary);
+      background: var(--bg-lavender);
+    }
+    .slot-btn.active {
+      border-color: var(--brand-primary);
+      background: var(--brand-primary);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<!-- Hero Section -->
+<section class="page-hero section" style="background:linear-gradient(135deg,#E8E5FF 0%,#E2F7F1 100%)">
+  <div class="container">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html">Home</a><span>/</span><span>Book a Demo</span>
+    </div>
+    <div style="max-width:740px">
+      <div class="section-label" style="margin-bottom:16px">Product Walkthrough</div>
+      <h1 class="section-title" style="font-size:clamp(2.5rem,5vw,3.75rem);margin-bottom:24px">
+        See EzyHR in action with a <span>product specialist</span>
+      </h1>
+      <p style="font-size:1.1875rem;color:var(--text-secondary);line-height:1.75;max-width:620px">
+        Get an interactive walkthrough customized to your team's size, country statutory requirements, and current HR challenges.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Demo Form Section -->
+<section class="section" style="background:var(--surface)">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:start">
+      
+      <!-- Left: Interactive Form -->
+      <div style="background:var(--surface-soft);border:1px solid var(--border-soft);border-radius:var(--radius-lg);padding:40px;box-shadow:var(--shadow-card)">
+        <h3 style="font-size:1.5rem;font-weight:800;margin-bottom:6px;font-family:var(--font-heading)">Schedule Your Demo</h3>
+        <p style="color:var(--text-secondary);font-size:0.9375rem;margin-bottom:28px">Complete the form below to reserve an illustrative product slot.</p>
+
+        <form id="bookDemoForm" novalidate>
+          
+          <!-- Full Name & Work Email -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px">
+            <div>
+              <label for="demoFullName" style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:6px;color:var(--text-primary)">Full Name *</label>
+              <input type="text" id="demoFullName" placeholder="e.g. Rachel Adams" required style="width:100%;padding:12px 16px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface)">
+              <div class="field-error" style="color:var(--danger);font-size:0.75rem;margin-top:4px;display:none">Please enter your full name</div>
+            </div>
+            <div>
+              <label for="demoEmail" style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:6px;color:var(--text-primary)">Work Email *</label>
+              <input type="email" id="demoEmail" placeholder="rachel@acme.com" required style="width:100%;padding:12px 16px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface)">
+              <div class="field-error" style="color:var(--danger);font-size:0.75rem;margin-top:4px;display:none">Please enter a valid work email</div>
+            </div>
+          </div>
+
+          <!-- Company Name & Job Title -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px">
+            <div>
+              <label for="demoCompany" style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:6px;color:var(--text-primary)">Company Name *</label>
+              <input type="text" id="demoCompany" placeholder="Acme Technologies" required style="width:100%;padding:12px 16px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface)">
+              <div class="field-error" style="color:var(--danger);font-size:0.75rem;margin-top:4px;display:none">Please enter your company name</div>
+            </div>
+            <div>
+              <label for="demoJobTitle" style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:6px;color:var(--text-primary)">Job Title *</label>
+              <input type="text" id="demoJobTitle" placeholder="Head of People / HR Director" required style="width:100%;padding:12px 16px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface)">
+              <div class="field-error" style="color:var(--danger);font-size:0.75rem;margin-top:4px;display:none">Please enter your job title</div>
+            </div>
+          </div>
+
+          <!-- Company Size & Preferred Contact -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px">
+            <div>
+              <label for="demoCompanySize" style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:6px;color:var(--text-primary)">Company Size *</label>
+              <select id="demoCompanySize" required style="width:100%;padding:12px 16px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface)">
+                <option value="">Select team size...</option>
+                <option value="1-20">1 – 20 employees</option>
+                <option value="21-50">21 – 50 employees</option>
+                <option value="51-200">51 – 200 employees</option>
+                <option value="201-500">201 – 500 employees</option>
+                <option value="500+">500+ employees (Enterprise)</option>
+              </select>
+              <div class="field-error" style="color:var(--danger);font-size:0.75rem;margin-top:4px;display:none">Please select your company size</div>
+            </div>
+            <div>
+              <label for="demoContactMethod" style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:6px;color:var(--text-primary)">Preferred Contact Method</label>
+              <select id="demoContactMethod" style="width:100%;padding:12px 16px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface)">
+                <option value="google-meet">Google Meet Video Call</option>
+                <option value="zoom">Zoom Video Call</option>
+                <option value="phone">Direct Phone Call</option>
+                <option value="email">Email Follow-up First</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Areas of Interest (Interactive Pills) -->
+          <div style="margin-bottom:24px">
+            <label style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:10px;color:var(--text-primary)">
+              Areas of Interest (Select all that apply)
+            </label>
+            <div style="display:flex;flex-wrap:wrap;gap:8px" id="interestPillsContainer">
+              <span class="interest-pill selected" data-value="payroll">💰 Automated Payroll</span>
+              <span class="interest-pill selected" data-value="attendance">⏰ Attendance & Shifts</span>
+              <span class="interest-pill" data-value="leave">🏖️ Leave Management</span>
+              <span class="interest-pill" data-value="performance">🎯 OKRs & Performance</span>
+              <span class="interest-pill" data-value="recruitment">🔍 ATS Recruitment</span>
+              <span class="interest-pill" data-value="onboarding">📋 Digital Onboarding</span>
+              <span class="interest-pill" data-value="analytics">📊 HR Analytics</span>
+            </div>
+          </div>
+
+          <!-- Preferred Time Slot Selector (Interactive Feature) -->
+          <div style="margin-bottom:24px">
+            <label style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:10px;color:var(--text-primary)">
+              Select Preferred Slot (Demo Time)
+            </label>
+            <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:10px" id="timeSlotsContainer">
+              <button type="button" class="slot-btn active" data-time="Tomorrow, 10:00 AM">Tomorrow, 10:00 AM</button>
+              <button type="button" class="slot-btn" data-time="Tomorrow, 2:30 PM">Tomorrow, 2:30 PM</button>
+              <button type="button" class="slot-btn" data-time="Thursday, 11:00 AM">Thursday, 11:00 AM</button>
+              <button type="button" class="slot-btn" data-time="Thursday, 4:00 PM">Thursday, 4:00 PM</button>
+              <button type="button" class="slot-btn" data-time="Friday, 1:00 PM">Friday, 1:00 PM</button>
+              <button type="button" class="slot-btn" data-time="Next Monday, 3:00 PM">Next Mon, 3:00 PM</button>
+            </div>
+          </div>
+
+          <!-- Additional Notes -->
+          <div style="margin-bottom:24px">
+            <label for="demoNotes" style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:6px;color:var(--text-primary)">
+              Anything specific you'd like to explore? (Optional)
+            </label>
+            <textarea id="demoNotes" rows="3" placeholder="Tell us about your current software or biggest payroll bottleneck..." style="width:100%;padding:12px 16px;border-radius:var(--radius-sm);border:1px solid var(--border-soft);background:var(--surface);font-family:inherit;resize:vertical"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" id="bookDemoSubmitBtn" class="btn btn-primary btn-xl" style="width:100%;justify-content:center">
+            <span>Confirm Demo Reservation</span>
+          </button>
+        </form>
+
+        <!-- Success Confirmation State -->
+        <div id="demoSuccessCard" style="display:none;text-align:center;padding:40px 20px">
+          <div style="width:68px;height:68px;background:var(--bg-teal);color:var(--success);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.25rem;margin:0 auto 20px">
+            ✓
+          </div>
+          <h4 style="font-size:1.625rem;font-weight:800;color:var(--text-primary);margin-bottom:12px;font-family:var(--font-heading)">
+            Demo Reserved Successfully!
+          </h4>
+          <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.6;margin-bottom:16px">
+            A calendar invitation link has been simulated for <strong id="confirmedEmailDisplay">your email</strong> for <strong id="confirmedSlotDisplay">Tomorrow, 10:00 AM</strong>.
+          </p>
+          <div style="background:var(--bg-lavender);border-radius:var(--radius-sm);padding:14px;font-size:0.8125rem;color:var(--text-secondary);margin-bottom:28px">
+            ℹ️ This is a demonstration form showcasing interactive frontend validation and appointment scheduling logic.
+          </div>
+          <div class="flex gap-sm justify-center">
+            <a href="app-demo.html" class="btn btn-primary">Try Interactive Dashboard Now</a>
+            <button id="bookAnotherDemoBtn" class="btn btn-secondary">Reserve Another Slot</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: What to Expect & Testimonials -->
+      <div>
+        <div class="section-label" style="margin-bottom:16px">What to Expect</div>
+        <h2 style="font-size:1.875rem;margin-bottom:20px;font-family:var(--font-heading)">
+          A 30-minute tailored tour with zero pressure
+        </h2>
+        <p style="color:var(--text-secondary);line-height:1.7;margin-bottom:32px">
+          We don't do canned sales presentations. You'll see how EzyHR maps directly to your organization's unique structure.
+        </p>
+
+        <div style="display:flex;flex-direction:column;gap:20px;margin-bottom:40px">
+          <div style="display:flex;align-items:flex-start;gap:16px;background:var(--bg-lavender);border-radius:var(--radius-md);padding:20px">
+            <div style="font-size:1.5rem">🎯</div>
+            <div>
+              <div style="font-weight:700;color:var(--text-primary);margin-bottom:4px">1. Workflow Discovery</div>
+              <div style="color:var(--text-secondary);font-size:0.875rem;line-height:1.6">We review how you currently run payroll, track leaves, and handle employee onboarding.</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:flex-start;gap:16px;background:var(--bg-blue);border-radius:var(--radius-md);padding:20px">
+            <div style="font-size:1.5rem">⚡</div>
+            <div>
+              <div style="font-weight:700;color:var(--text-primary);margin-bottom:4px">2. Live Platform Tour</div>
+              <div style="color:var(--text-secondary);font-size:0.875rem;line-height:1.6">We demonstrate our automated payroll engine, customizable leave policies, and self-service mobile experience.</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:flex-start;gap:16px;background:var(--bg-teal);border-radius:var(--radius-md);padding:20px">
+            <div style="font-size:1.5rem">💡</div>
+            <div>
+              <div style="font-weight:700;color:var(--text-primary);margin-bottom:4px">3. Transparent Migration Plan</div>
+              <div style="color:var(--text-secondary);font-size:0.875rem;line-height:1.6">Clear timeline on how to migrate your existing spreadsheets or legacy database with zero downtime.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample Quote Card -->
+        <div style="background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--radius-lg);padding:28px;box-shadow:var(--shadow-card)">
+          <div style="color:var(--warning);font-size:1.125rem;margin-bottom:12px">★★★★★</div>
+          <p style="color:var(--text-primary);font-size:0.9375rem;font-style:italic;line-height:1.6;margin-bottom:16px">
+            "The demo was refreshing—no aggressive sales pitch, just honest answers about how EzyHR cuts our end-of-month payroll cycle from 4 days to 45 minutes."
+          </p>
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:36px;height:36px;border-radius:50%;background:var(--brand-primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.8125rem">
+              DK
+            </div>
+            <div>
+              <div style="font-weight:700;font-size:0.875rem;color:var(--text-primary)">Deepak Kulkarni</div>
+              <div style="font-size:0.75rem;color:var(--text-muted)">VP of Operations, CloudScale Labs (Illustrative)</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="assets/js/components.js"></script>
+<script>
+  // Interest pills toggle
+  document.querySelectorAll('#interestPillsContainer .interest-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      pill.classList.toggle('selected');
+    });
+  });
+
+  // Time slot selection
+  let selectedSlot = 'Tomorrow, 10:00 AM';
+  document.querySelectorAll('#timeSlotsContainer .slot-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#timeSlotsContainer .slot-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      selectedSlot = btn.dataset.time;
+    });
+  });
+
+  // Form validation & submission
+  const bookForm = document.getElementById('bookDemoForm');
+  const demoSuccessCard = document.getElementById('demoSuccessCard');
+  const bookDemoSubmitBtn = document.getElementById('bookDemoSubmitBtn');
+  const bookAnotherDemoBtn = document.getElementById('bookAnotherDemoBtn');
+
+  function validateEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  function checkField(input, valid, errEl) {
+    if (!valid) {
+      input.style.borderColor = 'var(--danger)';
+      if (errEl) errEl.style.display = 'block';
+      return false;
+    } else {
+      input.style.borderColor = 'var(--border-soft)';
+      if (errEl) errEl.style.display = 'none';
+      return true;
+    }
+  }
+
+  bookForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const fullName = document.getElementById('demoFullName');
+    const email = document.getElementById('demoEmail');
+    const company = document.getElementById('demoCompany');
+    const jobTitle = document.getElementById('demoJobTitle');
+    const companySize = document.getElementById('demoCompanySize');
+
+    const v1 = checkField(fullName, fullName.value.trim().length > 1, fullName.nextElementSibling);
+    const v2 = checkField(email, validateEmail(email.value.trim()), email.nextElementSibling);
+    const v3 = checkField(company, company.value.trim().length > 0, company.nextElementSibling);
+    const v4 = checkField(jobTitle, jobTitle.value.trim().length > 0, jobTitle.nextElementSibling);
+    const v5 = checkField(companySize, companySize.value !== '', companySize.nextElementSibling);
+
+    if (v1 && v2 && v3 && v4 && v5) {
+      const origText = bookDemoSubmitBtn.innerHTML;
+      bookDemoSubmitBtn.disabled = true;
+      bookDemoSubmitBtn.innerHTML = '<span>Reserving Demo Slot...</span>';
+
+      setTimeout(() => {
+        bookDemoSubmitBtn.disabled = false;
+        bookDemoSubmitBtn.innerHTML = origText;
+
+        document.getElementById('confirmedEmailDisplay').textContent = email.value.trim();
+        document.getElementById('confirmedSlotDisplay').textContent = selectedSlot;
+
+        bookForm.style.display = 'none';
+        demoSuccessCard.style.display = 'block';
+        showToast('Demo Reserved', `We've scheduled your demo session for ${selectedSlot}.`, 'success');
+      }, 700);
+    } else {
+      showToast('Form Incomplete', 'Please fill out all required fields before proceeding.', 'warning');
+    }
+  });
+
+  bookAnotherDemoBtn.addEventListener('click', () => {
+    bookForm.reset();
+    bookForm.style.display = 'block';
+    demoSuccessCard.style.display = 'none';
+  });
+</script>
+</body>
+</html>
